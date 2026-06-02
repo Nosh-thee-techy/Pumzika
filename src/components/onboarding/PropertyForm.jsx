@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { useProperty } from '../../context/PropertyContext';
 import neighborhoods from '../../data/neighborhoods.json';
 
@@ -9,20 +10,34 @@ const NEIGHBORHOOD_LIST = [
 ];
 
 const BEDROOMS = ['Studio', '1 BR', '2 BR', '3 BR', '4+ BR'];
-const TYPES = ['Home', 'Apartment', 'Villa', 'Room'];
+const TYPES = [
+  { id: 'Entire Home', icon: '🏠' },
+  { id: 'Private Room', icon: '🛏' },
+  { id: 'Apartment', icon: '🏢' },
+  { id: 'Villa', icon: '🏡' },
+];
 const AMENITIES = [
-  'WiFi', 'Parking', 'Pool', 'Kitchen', 'Generator', 'DSTV',
-  'Air Conditioning', 'Security', 'Gym',
+  'WiFi', 'Pool', 'Parking', 'Generator', 'DSTV', 'Air Conditioning',
+  'Kitchen', 'Gym', 'Security', 'Borehole Water',
 ];
 
-function getDemandChip(name) {
+function getDemandBadge(name) {
   const id = name.toLowerCase().replace(/\s+/g, '-');
   const n = neighborhoods.find((x) => x.id === id || x.name === name);
-  if (!n) return { label: 'Steady demand', type: 'neutral' };
-  if (n.demandBadge === 'hot' || n.demandScore >= 78) return { label: 'High demand', type: 'accent' };
-  if (n.demandBadge === 'slow' || n.supplyGap < 5) return { label: 'Oversupplied', type: 'negative' };
-  return { label: 'Rising demand', type: 'positive' };
+  if (!n) return '📈 Rising';
+  if (n.demandBadge === 'hot' || n.demandScore >= 78) return '🔥 Hot';
+  if (n.demandBadge === 'slow' || n.supplyGap < 5) return '😴 Slow';
+  return '📈 Rising';
 }
+
+const fieldVariants = {
+  hidden: { opacity: 0, y: 16 },
+  visible: (i) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: i * 0.1, duration: 0.35 },
+  }),
+};
 
 export default function PropertyForm() {
   const navigate = useNavigate();
@@ -36,8 +51,6 @@ export default function PropertyForm() {
     currentPrice: '',
     amenities: [],
   });
-
-  const demandChip = useMemo(() => getDemandChip(form.neighborhood), [form.neighborhood]);
 
   const isComplete =
     form.name.trim() && form.neighborhood && form.bedrooms && form.propertyType && form.currentPrice;
@@ -56,65 +69,44 @@ export default function PropertyForm() {
     setTimeout(() => {
       saveProperty({ ...form, currentPrice: Number(form.currentPrice) });
       navigate('/dashboard');
-    }, 1200);
+    }, 1500);
   };
 
   return (
-    <div className="min-h-screen flex flex-col lg:flex-row">
-      {/* Brand panel */}
-      <aside
-        className="lg:w-1/2 flex flex-col justify-between p-10 lg:p-16 text-[var(--text-inverse)]"
-        style={{ background: 'var(--bg-inverse)' }}
-      >
-        <div>
-          <span className="font-display text-2xl" style={{ color: 'var(--accent)' }}>
-            pumzika
-          </span>
-        </div>
+    <div className="onboarding-bg min-h-screen flex flex-col">
+      <div className="relative z-10 p-6">
+        <span className="font-display text-2xl font-bold" style={{ color: 'var(--accent)' }}>
+          pumzika
+        </span>
+      </div>
 
-        <div>
-          <h1 className="font-display text-4xl lg:text-5xl leading-[1.1] italic">
-            Price right.
-            <br />
-            Fill every night.
-          </h1>
-          <ul className="mt-8 space-y-2 text-sm" style={{ color: 'var(--text-muted)' }}>
-            {[
-              "Tonight's optimal price",
-              '30-day demand forecast',
-              'Nairobi market intelligence',
-            ].map((item) => (
-              <li key={item} className="flex items-center gap-2">
-                <span style={{ color: 'var(--accent)' }}>✦</span>
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <p className="text-meta text-[var(--text-muted)]">
-          Trusted by Pumzika hosts across Nairobi
-        </p>
-      </aside>
-
-      {/* Form panel */}
-      <main className="lg:w-1/2 flex items-center justify-center p-8 lg:p-14 bg-[var(--bg-surface)]">
-        <div className="w-full max-w-md">
+      <div className="relative z-10 flex-1 flex items-center justify-center p-6">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.96 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.4 }}
+          className="w-full max-w-[520px] rounded-2xl border p-8"
+          style={{
+            background: 'var(--color-bg-secondary)',
+            borderColor: 'var(--border-subtle)',
+            backgroundImage: 'var(--pattern-card)',
+          }}
+        >
           {loading ? (
-            <div className="py-20 text-center">
+            <div className="py-16 text-center">
               <div
-                className="w-8 h-8 border-2 rounded-full animate-spin mx-auto mb-4"
+                className="w-10 h-10 border-2 rounded-full animate-spin mx-auto mb-4"
                 style={{ borderColor: 'var(--accent)', borderTopColor: 'transparent' }}
               />
-              <p className="text-meta">Analysing market data...</p>
+              <p className="text-body italic">Analysing Nairobi market data...</p>
             </div>
           ) : (
             <>
-              <p className="text-label mb-2">Get started</p>
-              <h2 className="text-2xl font-semibold tracking-tight mb-8">Tell us about your property</h2>
+              <h1 className="font-display text-3xl font-extrabold">Let&apos;s set up your property</h1>
+              <p className="text-body mt-2 italic">Takes 60 seconds. We&apos;ll handle the rest.</p>
 
-              <form onSubmit={handleSubmit} className="space-y-8">
-                <div>
+              <form onSubmit={handleSubmit} className="mt-8 space-y-6">
+                <motion.div custom={0} variants={fieldVariants} initial="hidden" animate="visible">
                   <label className="text-label block mb-2">Property name</label>
                   <input
                     className="input"
@@ -122,130 +114,96 @@ export default function PropertyForm() {
                     value={form.name}
                     onChange={(e) => setForm({ ...form, name: e.target.value })}
                   />
-                </div>
+                </motion.div>
 
-                <div>
+                <motion.div custom={1} variants={fieldVariants} initial="hidden" animate="visible">
                   <label className="text-label block mb-2">Neighborhood</label>
                   <select
                     className="input"
                     value={form.neighborhood}
                     onChange={(e) => setForm({ ...form, neighborhood: e.target.value })}
                   >
-                    {NEIGHBORHOOD_LIST.map((n) => {
-                      const chip = getDemandChip(n);
-                      const dot =
-                        chip.type === 'accent' ? '●' : chip.type === 'negative' ? '○' : '◐';
-                      return (
-                        <option key={n} value={n}>
-                          {n} {dot}
-                        </option>
-                      );
-                    })}
+                    {NEIGHBORHOOD_LIST.map((n) => (
+                      <option key={n} value={n}>
+                        {n} · {getDemandBadge(n)}
+                      </option>
+                    ))}
                   </select>
-                  <span
-                    className={`chip mt-2 ${
-                      demandChip.type === 'accent'
-                        ? 'chip-accent'
-                        : demandChip.type === 'negative'
-                          ? 'chip-negative'
-                          : 'chip-positive'
-                    }`}
-                  >
-                    <span
-                      className="w-1.5 h-1.5 rounded-full"
-                      style={{
-                        background:
-                          demandChip.type === 'negative'
-                            ? 'var(--negative)'
-                            : demandChip.type === 'accent'
-                              ? 'var(--accent)'
-                              : 'var(--positive)',
-                      }}
-                    />
-                    {demandChip.label}
-                  </span>
-                </div>
+                </motion.div>
 
-                <div className="grid grid-cols-2 gap-6">
-                  <div>
-                    <label className="text-label block mb-2">Bedrooms</label>
-                    <div className="flex flex-wrap gap-2">
-                      {BEDROOMS.map((b) => (
-                        <button
-                          key={b}
-                          type="button"
-                          onClick={() => setForm({ ...form, bedrooms: b })}
-                          className={`chip cursor-pointer ${form.bedrooms === b ? 'chip-accent' : ''}`}
-                        >
-                          {b === '4+ BR' ? '4+' : b.replace(' BR', 'BR')}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                  <div>
-                    <label className="text-label block mb-2">Type</label>
-                    <div className="flex flex-wrap gap-2">
-                      {TYPES.map((t) => (
-                        <button
-                          key={t}
-                          type="button"
-                          onClick={() => setForm({ ...form, propertyType: t })}
-                          className={`chip cursor-pointer ${form.propertyType === t ? 'chip-accent' : ''}`}
-                        >
-                          {t}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <label className="text-label block mb-2">Your current nightly price (Ksh)</label>
-                  <div className="relative">
-                    <span className="absolute left-3 top-1/2 -translate-y-1/2 text-meta">Ksh</span>
-                    <input
-                      type="number"
-                      className="input pl-12"
-                      placeholder="7,000"
-                      value={form.currentPrice}
-                      onChange={(e) => setForm({ ...form, currentPrice: e.target.value })}
-                    />
-                  </div>
-                  <p className="text-meta mt-2">We&apos;ll show you how to optimise this</p>
-                </div>
-
-                <div>
-                  <label className="text-label block mb-3">Amenities offered</label>
-                  <div className="grid grid-cols-3 gap-3">
-                    {AMENITIES.map((a) => (
-                      <label
-                        key={a}
-                        className="flex items-center gap-2 text-sm cursor-pointer"
-                        style={{ color: 'var(--text-secondary)' }}
+                <motion.div custom={2} variants={fieldVariants} initial="hidden" animate="visible">
+                  <label className="text-label block mb-2">Bedrooms</label>
+                  <div className="flex flex-wrap gap-2">
+                    {BEDROOMS.map((b) => (
+                      <button
+                        key={b}
+                        type="button"
+                        onClick={() => setForm({ ...form, bedrooms: b })}
+                        className={`chip cursor-pointer ${form.bedrooms === b ? 'chip-accent' : ''}`}
                       >
-                        <input
-                          type="checkbox"
-                          checked={form.amenities.includes(a)}
-                          onChange={() => toggleAmenity(a)}
-                          className="accent-[var(--accent)]"
-                        />
-                        {a}
-                      </label>
+                        {b}
+                      </button>
                     ))}
                   </div>
-                </div>
+                </motion.div>
 
-                <div>
-                  <button type="submit" className="btn-primary w-full py-3" disabled={!isComplete}>
-                    Generate my pricing dashboard →
+                <motion.div custom={3} variants={fieldVariants} initial="hidden" animate="visible">
+                  <label className="text-label block mb-2">Property type</label>
+                  <div className="flex flex-wrap gap-2">
+                    {TYPES.map(({ id, icon }) => (
+                      <button
+                        key={id}
+                        type="button"
+                        onClick={() => setForm({ ...form, propertyType: id })}
+                        className={`chip cursor-pointer ${form.propertyType === id ? 'chip-accent' : ''}`}
+                      >
+                        {icon} {id}
+                      </button>
+                    ))}
+                  </div>
+                </motion.div>
+
+                <motion.div custom={4} variants={fieldVariants} initial="hidden" animate="visible">
+                  <label className="text-label block mb-2">Current nightly price (Ksh)</label>
+                  <input
+                    type="number"
+                    className="input"
+                    placeholder="What do you charge now?"
+                    value={form.currentPrice}
+                    onChange={(e) => setForm({ ...form, currentPrice: e.target.value })}
+                  />
+                </motion.div>
+
+                <motion.div custom={5} variants={fieldVariants} initial="hidden" animate="visible">
+                  <label className="text-label block mb-3">Amenities</label>
+                  <div className="flex flex-wrap gap-2">
+                    {AMENITIES.map((a) => (
+                      <button
+                        key={a}
+                        type="button"
+                        onClick={() => toggleAmenity(a)}
+                        className={`chip cursor-pointer ${form.amenities.includes(a) ? 'chip-accent' : ''}`}
+                      >
+                        {a}
+                      </button>
+                    ))}
+                  </div>
+                </motion.div>
+
+                <motion.div custom={6} variants={fieldVariants} initial="hidden" animate="visible">
+                  <button
+                    type="submit"
+                    className={`btn-primary w-full py-3.5 text-base ${isComplete ? 'btn-ready-pulse' : ''}`}
+                    disabled={!isComplete}
+                  >
+                    Show me my dashboard →
                   </button>
-                  <p className="text-meta text-center mt-3">Takes under 2 seconds</p>
-                </div>
+                </motion.div>
               </form>
             </>
           )}
-        </div>
-      </main>
+        </motion.div>
+      </div>
     </div>
   );
 }

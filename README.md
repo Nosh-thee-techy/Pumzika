@@ -20,9 +20,34 @@ Open http://localhost:5173 — complete the 60-second onboarding, then explore t
 - **3D Nairobi map** — deck.gl columns colored by demand (Mapbox token required)
 - **Ask Pumzika AI** — Web Speech API + Claude (or smart mock responses without API key)
 
-## Demo without API keys
+## Data pipeline (real CSVs)
 
-The app runs fully without keys. Voice uses contextual mock answers. The map shows a fallback heat grid until you add `VITE_MAPBOX_TOKEN`.
+Source files live in `../Data/` at the repo root:
+
+| File | Records | Powers |
+|------|---------|--------|
+| `AB_NYC_2019.csv` | ~49k Airbnb listings | Comps, neighborhood prices, occupancy, ratings |
+| `hotel_bookings.csv` | ~119k hotel bookings | 30-day forecast seasonality, weekend demand |
+
+NYC neighbourhoods are **rank-matched** to Nairobi areas by price tier, then prices are scaled to KSH. Hotel booking patterns drive the demand calendar.
+
+After editing CSVs or seed data:
+
+```bash
+npm run build:data
+```
+
+Metadata written to `src/data/data-sources.json`.
+
+## Kenya map (drill-down)
+
+Uses official county boundary GeoJSON (`public/geo/kenya-counties.geojson`):
+
+1. **Kenya** — all 47 counties colored by demand score
+2. **County** — click a county to zoom in; Nairobi shows 15 neighborhood columns
+3. **Area** — click a neighborhood for listing-level stats
+
+Requires `VITE_MAPBOX_TOKEN` in `.env`.
 
 ## Stack
 

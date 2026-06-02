@@ -1,0 +1,1178 @@
+[
+  {
+    "code": 1,
+    "id": "mombasa",
+    "name": "Mombasa",
+    "center": [
+      39.65414670618083,
+      -4.025298896080414
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "KISAUNI"
+    ],
+    "demandScore": 76,
+    "avgNightlyPrice": 6600,
+    "occupancyRate": 0.69,
+    "activeListings": 170,
+    "supplyGap": 8,
+    "shortTermRentalMarket": "strong",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 2,
+    "id": "kwale",
+    "name": "Kwale",
+    "center": [
+      39.31401958440428,
+      -3.9704727080136415
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "KINANGO"
+    ],
+    "demandScore": 51,
+    "avgNightlyPrice": 3100,
+    "occupancyRate": 0.54,
+    "activeListings": 40,
+    "supplyGap": 1,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 3,
+    "id": "kilifi",
+    "name": "Kilifi",
+    "center": [
+      39.80152956738382,
+      -3.494185681081279
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "KALOLENI"
+    ],
+    "demandScore": 52,
+    "avgNightlyPrice": 3200,
+    "occupancyRate": 0.55,
+    "activeListings": 45,
+    "supplyGap": 2,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 4,
+    "id": "tana-river",
+    "name": "Tana River",
+    "center": [
+      39.57614955355102,
+      -1.2751753309954483
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "GALOLE"
+    ],
+    "demandScore": 53,
+    "avgNightlyPrice": 3300,
+    "occupancyRate": 0.56,
+    "activeListings": 50,
+    "supplyGap": 2,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 5,
+    "id": "lamu",
+    "name": "Lamu",
+    "center": [
+      40.5900115973319,
+      -2.232174787906134
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "LAMU WEST"
+    ],
+    "demandScore": 54,
+    "avgNightlyPrice": 3400,
+    "occupancyRate": 0.5700000000000001,
+    "activeListings": 55,
+    "supplyGap": 3,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 6,
+    "id": "taita-taveta",
+    "name": "Taita Taveta",
+    "center": [
+      38.419361817860874,
+      -3.222107424275978
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "WUNDANYI"
+    ],
+    "demandScore": 55,
+    "avgNightlyPrice": 3600,
+    "occupancyRate": 0.5800000000000001,
+    "activeListings": 60,
+    "supplyGap": 3,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 7,
+    "id": "garissa",
+    "name": "Garissa",
+    "center": [
+      39.66991593079169,
+      -0.09973048318363478
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "BALAMBALA"
+    ],
+    "demandScore": 49,
+    "avgNightlyPrice": 2800,
+    "occupancyRate": 0.52,
+    "activeListings": 30,
+    "supplyGap": 0,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 8,
+    "id": "wajir",
+    "name": "Wajir",
+    "center": [
+      39.777245911690756,
+      1.8435358992245978
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "WAJIR WEST"
+    ],
+    "demandScore": 50,
+    "avgNightlyPrice": 3000,
+    "occupancyRate": 0.53,
+    "activeListings": 35,
+    "supplyGap": 1,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 9,
+    "id": "mandera",
+    "name": "Mandera",
+    "center": [
+      41.01558781392426,
+      3.5096486662417115
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "MANDERA SOUTH"
+    ],
+    "demandScore": 51,
+    "avgNightlyPrice": 3100,
+    "occupancyRate": 0.54,
+    "activeListings": 40,
+    "supplyGap": 1,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 10,
+    "id": "marsabit",
+    "name": "Marsabit",
+    "center": [
+      37.70475064944391,
+      2.737967713723738
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "NORTH HORR"
+    ],
+    "demandScore": 52,
+    "avgNightlyPrice": 3200,
+    "occupancyRate": 0.55,
+    "activeListings": 45,
+    "supplyGap": 2,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 11,
+    "id": "isiolo",
+    "name": "Isiolo",
+    "center": [
+      38.2448124001862,
+      0.7367839303896604
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "ISIOLO NORTH"
+    ],
+    "demandScore": 53,
+    "avgNightlyPrice": 3300,
+    "occupancyRate": 0.56,
+    "activeListings": 50,
+    "supplyGap": 2,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 12,
+    "id": "meru",
+    "name": "Meru",
+    "center": [
+      37.86063790874067,
+      0.0822369208107227
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "NORTH IMENTI"
+    ],
+    "demandScore": 54,
+    "avgNightlyPrice": 3400,
+    "occupancyRate": 0.5700000000000001,
+    "activeListings": 55,
+    "supplyGap": 3,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 13,
+    "id": "tharaka-nithi",
+    "name": "Tharaka - Nithi",
+    "center": [
+      37.948384145857744,
+      -0.19735264358935434
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "MAARA"
+    ],
+    "demandScore": 55,
+    "avgNightlyPrice": 3600,
+    "occupancyRate": 0.5800000000000001,
+    "activeListings": 60,
+    "supplyGap": 3,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 14,
+    "id": "embu",
+    "name": "Embu",
+    "center": [
+      37.63509965708681,
+      -0.6554043435973027
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "RUNYENJES"
+    ],
+    "demandScore": 49,
+    "avgNightlyPrice": 2800,
+    "occupancyRate": 0.52,
+    "activeListings": 30,
+    "supplyGap": 0,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 15,
+    "id": "kitui",
+    "name": "Kitui",
+    "center": [
+      38.174093783092054,
+      -1.6294557197659034
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "KITUI EAST"
+    ],
+    "demandScore": 50,
+    "avgNightlyPrice": 3000,
+    "occupancyRate": 0.53,
+    "activeListings": 35,
+    "supplyGap": 1,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 16,
+    "id": "machakos",
+    "name": "Machakos",
+    "center": [
+      37.467078234422345,
+      -1.2391644012038947
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "YATTA"
+    ],
+    "demandScore": 51,
+    "avgNightlyPrice": 3100,
+    "occupancyRate": 0.54,
+    "activeListings": 40,
+    "supplyGap": 1,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 17,
+    "id": "makueni",
+    "name": "Makueni",
+    "center": [
+      37.835148747118254,
+      -2.132499665991762
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "KIBWEZI WEST"
+    ],
+    "demandScore": 52,
+    "avgNightlyPrice": 3200,
+    "occupancyRate": 0.55,
+    "activeListings": 45,
+    "supplyGap": 2,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 18,
+    "id": "nyandarua",
+    "name": "Nyandarua",
+    "center": [
+      36.52577219419128,
+      -0.42935893241453665
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "KIPIPIRI"
+    ],
+    "demandScore": 53,
+    "avgNightlyPrice": 3300,
+    "occupancyRate": 0.56,
+    "activeListings": 50,
+    "supplyGap": 2,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 19,
+    "id": "nyeri",
+    "name": "Nyeri",
+    "center": [
+      36.92011329438589,
+      -0.3949709670186094
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "KIENI"
+    ],
+    "demandScore": 54,
+    "avgNightlyPrice": 3400,
+    "occupancyRate": 0.5700000000000001,
+    "activeListings": 55,
+    "supplyGap": 3,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 20,
+    "id": "kirinyaga",
+    "name": "Kirinyaga",
+    "center": [
+      37.3148982355817,
+      -0.6155794834018703
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "GICHUGU"
+    ],
+    "demandScore": 55,
+    "avgNightlyPrice": 3600,
+    "occupancyRate": 0.5800000000000001,
+    "activeListings": 60,
+    "supplyGap": 3,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 21,
+    "id": "murang-a",
+    "name": "Murang'a",
+    "center": [
+      37.04332735359669,
+      -0.814186647756933
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "MATHIOYA"
+    ],
+    "demandScore": 49,
+    "avgNightlyPrice": 2800,
+    "occupancyRate": 0.52,
+    "activeListings": 30,
+    "supplyGap": 0,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 22,
+    "id": "kiambu",
+    "name": "Kiambu",
+    "center": [
+      36.932964757814624,
+      -1.0583379890968494
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "GATUNDU NORTH"
+    ],
+    "demandScore": 50,
+    "avgNightlyPrice": 3000,
+    "occupancyRate": 0.53,
+    "activeListings": 35,
+    "supplyGap": 1,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 23,
+    "id": "turkana",
+    "name": "Turkana",
+    "center": [
+      35.85885988299171,
+      2.6542224039072373
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "TURKANA NORTH"
+    ],
+    "demandScore": 51,
+    "avgNightlyPrice": 3100,
+    "occupancyRate": 0.54,
+    "activeListings": 40,
+    "supplyGap": 1,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 24,
+    "id": "west-pokot",
+    "name": "West Pokot",
+    "center": [
+      35.29878343768026,
+      1.7582824541301139
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "KAPENGURIA"
+    ],
+    "demandScore": 52,
+    "avgNightlyPrice": 3200,
+    "occupancyRate": 0.55,
+    "activeListings": 45,
+    "supplyGap": 2,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 25,
+    "id": "samburu",
+    "name": "Samburu",
+    "center": [
+      36.983336113674326,
+      1.3285332499435647
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "SAMBURU NORTH"
+    ],
+    "demandScore": 53,
+    "avgNightlyPrice": 3300,
+    "occupancyRate": 0.56,
+    "activeListings": 50,
+    "supplyGap": 2,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 26,
+    "id": "trans-nzoia",
+    "name": "Trans Nzoia",
+    "center": [
+      34.99094723430569,
+      1.0278293604869566
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "ENDEBESS"
+    ],
+    "demandScore": 54,
+    "avgNightlyPrice": 3400,
+    "occupancyRate": 0.5700000000000001,
+    "activeListings": 55,
+    "supplyGap": 3,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 27,
+    "id": "uasin-gishu",
+    "name": "Uasin Gishu",
+    "center": [
+      35.30391043208315,
+      0.5112726812906707
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "AINABKOI"
+    ],
+    "demandScore": 55,
+    "avgNightlyPrice": 3600,
+    "occupancyRate": 0.5800000000000001,
+    "activeListings": 60,
+    "supplyGap": 3,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 28,
+    "id": "elegeyo-marakwet",
+    "name": "Elegeyo-marakwet",
+    "center": [
+      35.55602713857325,
+      0.7598886794367888
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "MARAKWET EAST"
+    ],
+    "demandScore": 49,
+    "avgNightlyPrice": 2800,
+    "occupancyRate": 0.52,
+    "activeListings": 30,
+    "supplyGap": 0,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 29,
+    "id": "nandi",
+    "name": "Nandi",
+    "center": [
+      35.073819555012214,
+      0.16910520755727498
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "MOSOP"
+    ],
+    "demandScore": 50,
+    "avgNightlyPrice": 3000,
+    "occupancyRate": 0.53,
+    "activeListings": 35,
+    "supplyGap": 1,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 30,
+    "id": "baringo",
+    "name": "Baringo",
+    "center": [
+      35.880428549326446,
+      0.6424567795640325
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "BARINGO CENTRAL"
+    ],
+    "demandScore": 51,
+    "avgNightlyPrice": 3100,
+    "occupancyRate": 0.54,
+    "activeListings": 40,
+    "supplyGap": 1,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 31,
+    "id": "laikipia",
+    "name": "Laikipia",
+    "center": [
+      36.81237353183632,
+      0.2654707101575544
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "LAIKIPIA NORTH"
+    ],
+    "demandScore": 52,
+    "avgNightlyPrice": 3200,
+    "occupancyRate": 0.55,
+    "activeListings": 45,
+    "supplyGap": 2,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 32,
+    "id": "nakuru",
+    "name": "Nakuru",
+    "center": [
+      36.02404967963768,
+      -0.41230590161538466
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "SUBUKIA"
+    ],
+    "demandScore": 66,
+    "avgNightlyPrice": 4300,
+    "occupancyRate": 0.64,
+    "activeListings": 115,
+    "supplyGap": 5,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 33,
+    "id": "narok",
+    "name": "Narok",
+    "center": [
+      35.68107038474546,
+      -1.104733939403295
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "NAROK SOUTH"
+    ],
+    "demandScore": 54,
+    "avgNightlyPrice": 3400,
+    "occupancyRate": 0.5700000000000001,
+    "activeListings": 55,
+    "supplyGap": 3,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 34,
+    "id": "kajiado",
+    "name": "Kajiado",
+    "center": [
+      36.93603586048713,
+      -1.9926545422237634
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "KAJIADO CENTRAL"
+    ],
+    "demandScore": 55,
+    "avgNightlyPrice": 3600,
+    "occupancyRate": 0.5800000000000001,
+    "activeListings": 60,
+    "supplyGap": 3,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 35,
+    "id": "kericho",
+    "name": "Kericho",
+    "center": [
+      35.30128937804578,
+      -0.3252024105263973
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "BELGUT"
+    ],
+    "demandScore": 49,
+    "avgNightlyPrice": 2800,
+    "occupancyRate": 0.52,
+    "activeListings": 30,
+    "supplyGap": 0,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 36,
+    "id": "bomet",
+    "name": "Bomet",
+    "center": [
+      35.29065699839352,
+      -0.6986344894796893
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "CHEPALUNGU"
+    ],
+    "demandScore": 50,
+    "avgNightlyPrice": 3000,
+    "occupancyRate": 0.53,
+    "activeListings": 35,
+    "supplyGap": 1,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 37,
+    "id": "kakamega",
+    "name": "Kakamega",
+    "center": [
+      34.740288314278224,
+      0.4400583126980436
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "SHINYALU"
+    ],
+    "demandScore": 51,
+    "avgNightlyPrice": 3100,
+    "occupancyRate": 0.54,
+    "activeListings": 40,
+    "supplyGap": 1,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 38,
+    "id": "vihiga",
+    "name": "Vihiga",
+    "center": [
+      34.731299920141886,
+      0.08061061272155103
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "HAMISI"
+    ],
+    "demandScore": 52,
+    "avgNightlyPrice": 3200,
+    "occupancyRate": 0.55,
+    "activeListings": 45,
+    "supplyGap": 2,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 39,
+    "id": "bungoma",
+    "name": "Bungoma",
+    "center": [
+      34.65667527623619,
+      0.7191455731764105
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "KANDUYI"
+    ],
+    "demandScore": 53,
+    "avgNightlyPrice": 3300,
+    "occupancyRate": 0.56,
+    "activeListings": 50,
+    "supplyGap": 2,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 40,
+    "id": "busia",
+    "name": "Busia",
+    "center": [
+      34.2403346512868,
+      0.4475929307609379
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "TESO NORTH"
+    ],
+    "demandScore": 54,
+    "avgNightlyPrice": 3400,
+    "occupancyRate": 0.5700000000000001,
+    "activeListings": 55,
+    "supplyGap": 3,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 41,
+    "id": "siaya",
+    "name": "Siaya",
+    "center": [
+      34.35502685876718,
+      0.10390154458407057
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "UGENYA"
+    ],
+    "demandScore": 55,
+    "avgNightlyPrice": 3600,
+    "occupancyRate": 0.5800000000000001,
+    "activeListings": 60,
+    "supplyGap": 3,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 42,
+    "id": "kisumu",
+    "name": "Kisumu",
+    "center": [
+      34.93716880677664,
+      -0.156125038780824
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "NYAKACH"
+    ],
+    "demandScore": 65,
+    "avgNightlyPrice": 4100,
+    "occupancyRate": 0.62,
+    "activeListings": 80,
+    "supplyGap": 4,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 43,
+    "id": "homa-bay",
+    "name": "Homa Bay",
+    "center": [
+      34.56326977042906,
+      -0.5939158559395513
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "RANGWE"
+    ],
+    "demandScore": 50,
+    "avgNightlyPrice": 3000,
+    "occupancyRate": 0.53,
+    "activeListings": 35,
+    "supplyGap": 1,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 44,
+    "id": "migori",
+    "name": "Migori",
+    "center": [
+      34.4386146336469,
+      -0.8944044582201768
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "KURIA EAST"
+    ],
+    "demandScore": 51,
+    "avgNightlyPrice": 3100,
+    "occupancyRate": 0.54,
+    "activeListings": 40,
+    "supplyGap": 1,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 45,
+    "id": "kisii",
+    "name": "Kisii",
+    "center": [
+      34.78276486074986,
+      -0.7110468247599435
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "NYARIBARI CHACHE"
+    ],
+    "demandScore": 52,
+    "avgNightlyPrice": 3200,
+    "occupancyRate": 0.55,
+    "activeListings": 45,
+    "supplyGap": 2,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 46,
+    "id": "nyamira",
+    "name": "Nyamira",
+    "center": [
+      34.94893448587138,
+      -0.6229297158008111
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "NORTH MUGIRANGO"
+    ],
+    "demandScore": 53,
+    "avgNightlyPrice": 3300,
+    "occupancyRate": 0.56,
+    "activeListings": 50,
+    "supplyGap": 2,
+    "shortTermRentalMarket": "emerging",
+    "dataSource": "estimated",
+    "topReviewThemes": [
+      "good value",
+      "local experience",
+      "quiet area"
+    ]
+  },
+  {
+    "code": 47,
+    "id": "nairobi",
+    "name": "Nairobi",
+    "center": [
+      36.87710797746326,
+      -1.2904553469740636
+    ],
+    "constituencyCount": 1,
+    "constituencies": [
+      "KAMUKUNJI"
+    ],
+    "demandScore": 64,
+    "avgNightlyPrice": 8327,
+    "occupancyRate": 0.45,
+    "activeListings": 180,
+    "supplyGap": 0,
+    "shortTermRentalMarket": "primary",
+    "dataSource": "AB_NYC_2019.csv",
+    "topReviewThemes": [
+      "great location",
+      "clean",
+      "fast wifi",
+      "secure"
+    ]
+  }
+]

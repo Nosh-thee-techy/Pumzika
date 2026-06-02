@@ -1,0 +1,30 @@
+{
+  "builtAt": "2026-06-02T17:35:50.106Z",
+  "sources": [
+    {
+      "file": "Data/AB_NYC_2019.csv",
+      "records": 48895,
+      "usedFor": [
+        "listings",
+        "neighborhood pricing",
+        "occupancy",
+        "ratings"
+      ],
+      "mappedTo": "Nairobi neighborhoods via price-tier rank matching",
+      "listingsExported": 180
+    },
+    {
+      "file": "Data/hotel_bookings.csv",
+      "records": 119390,
+      "usedFor": [
+        "30-day demand forecast",
+        "seasonal occupancy",
+        "weekend ADR premium"
+      ],
+      "activeBookings": 73419,
+      "weekendAdrPremium": 1.02
+    }
+  ],
+  "nycNeighbourhoodsMapped": 147,
+  "priceConversion": "78 KSH per USD (neighborhood-relative scaling)"
+}

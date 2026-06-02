@@ -1,17 +1,452 @@
 [
-  { "id": "westlands", "name": "Westlands", "coordinates": [36.8070, -1.2674], "demandScore": 88, "avgNightlyPrice": 9500, "activeListings": 62, "occupancyRate": 0.79, "supplyGap": 8, "demandBadge": "hot", "topAmenities": ["WiFi", "Parking", "Gym"], "vibeScore": 85, "topReviewThemes": ["nightlife nearby", "modern building", "great restaurants"] },
-  { "id": "kilimani", "name": "Kilimani", "coordinates": [36.7820, -1.2921], "demandScore": 82, "avgNightlyPrice": 8200, "activeListings": 47, "occupancyRate": 0.74, "supplyGap": 12, "demandBadge": "hot", "topAmenities": ["WiFi", "Parking", "Security"], "vibeScore": 78, "topReviewThemes": ["great location", "clean", "fast wifi"] },
-  { "id": "karen", "name": "Karen", "coordinates": [36.7089, -1.3197], "demandScore": 71, "avgNightlyPrice": 12000, "activeListings": 28, "occupancyRate": 0.68, "supplyGap": 5, "demandBadge": "rising", "topAmenities": ["Pool", "Parking", "Generator"], "vibeScore": 82, "topReviewThemes": ["peaceful", "spacious", "family friendly"] },
-  { "id": "lavington", "name": "Lavington", "coordinates": [36.7650, -1.2780], "demandScore": 76, "avgNightlyPrice": 8800, "activeListings": 35, "occupancyRate": 0.71, "supplyGap": 9, "demandBadge": "rising", "topAmenities": ["WiFi", "Security", "DSTV"], "vibeScore": 75, "topReviewThemes": ["quiet area", "secure", "good value"] },
-  { "id": "langata", "name": "Langata", "coordinates": [36.8200, -1.3400], "demandScore": 65, "avgNightlyPrice": 6500, "activeListings": 22, "occupancyRate": 0.62, "supplyGap": 3, "demandBadge": "slow", "topAmenities": ["Parking", "Kitchen", "WiFi"], "vibeScore": 70, "topReviewThemes": ["near safari park", "affordable", "green area"] },
-  { "id": "gigiri", "name": "Gigiri", "coordinates": [36.7900, -1.2350], "demandScore": 74, "avgNightlyPrice": 11000, "activeListings": 18, "occupancyRate": 0.72, "supplyGap": 6, "demandBadge": "rising", "topAmenities": ["Security", "Generator", "WiFi"], "vibeScore": 80, "topReviewThemes": ["diplomatic area", "very secure", "premium feel"] },
-  { "id": "parklands", "name": "Parklands", "coordinates": [36.8250, -1.2650], "demandScore": 79, "avgNightlyPrice": 7800, "activeListings": 41, "occupancyRate": 0.76, "supplyGap": 10, "demandBadge": "hot", "topAmenities": ["WiFi", "Parking", "Kitchen"], "vibeScore": 72, "topReviewThemes": ["central", "diverse food", "good transport"] },
-  { "id": "upperhill", "name": "Upperhill", "coordinates": [36.8150, -1.2950], "demandScore": 77, "avgNightlyPrice": 7500, "activeListings": 33, "occupancyRate": 0.73, "supplyGap": 7, "demandBadge": "rising", "topAmenities": ["WiFi", "Gym", "Parking"], "vibeScore": 74, "topReviewThemes": ["business district", "modern", "convenient"] },
-  { "id": "kileleshwa", "name": "Kileleshwa", "coordinates": [36.7750, -1.2850], "demandScore": 80, "avgNightlyPrice": 8000, "activeListings": 39, "occupancyRate": 0.75, "supplyGap": 11, "demandBadge": "hot", "topAmenities": ["WiFi", "Security", "Air Conditioning"], "vibeScore": 76, "topReviewThemes": ["trendy cafes", "young professionals", "walkable"] },
-  { "id": "runda", "name": "Runda", "coordinates": [36.8050, -1.2100], "demandScore": 68, "avgNightlyPrice": 14000, "activeListings": 15, "occupancyRate": 0.65, "supplyGap": 4, "demandBadge": "slow", "topAmenities": ["Pool", "Security", "Generator"], "vibeScore": 88, "topReviewThemes": ["luxury", "gated community", "very private"] },
-  { "id": "muthaiga", "name": "Muthaiga", "coordinates": [36.8400, -1.2450], "demandScore": 70, "avgNightlyPrice": 13500, "activeListings": 12, "occupancyRate": 0.67, "supplyGap": 2, "demandBadge": "slow", "topAmenities": ["Security", "Pool", "Generator"], "vibeScore": 86, "topReviewThemes": ["exclusive", "tree-lined", "premium"] },
-  { "id": "south-b", "name": "South B", "coordinates": [36.8350, -1.3100], "demandScore": 72, "avgNightlyPrice": 5500, "activeListings": 38, "occupancyRate": 0.70, "supplyGap": 14, "demandBadge": "rising", "topAmenities": ["WiFi", "Parking", "Kitchen"], "vibeScore": 68, "topReviewThemes": ["affordable", "near airport", "local vibe"] },
-  { "id": "south-c", "name": "South C", "coordinates": [36.8200, -1.3200], "demandScore": 69, "avgNightlyPrice": 5200, "activeListings": 34, "occupancyRate": 0.68, "supplyGap": 11, "demandBadge": "rising", "topAmenities": ["WiFi", "Parking", "Security"], "vibeScore": 66, "topReviewThemes": ["budget friendly", "commuter hub", "basic amenities"] },
-  { "id": "ngong-road", "name": "Ngong Road", "coordinates": [36.7800, -1.3050], "demandScore": 75, "avgNightlyPrice": 7000, "activeListings": 44, "occupancyRate": 0.72, "supplyGap": 13, "demandBadge": "rising", "topAmenities": ["WiFi", "Parking", "Kitchen"], "vibeScore": 71, "topReviewThemes": ["growing area", "malls nearby", "good value"] },
-  { "id": "thika-road", "name": "Thika Road", "coordinates": [36.8700, -1.2200], "demandScore": 66, "avgNightlyPrice": 4800, "activeListings": 52, "occupancyRate": 0.64, "supplyGap": 6, "demandBadge": "slow", "topAmenities": ["WiFi", "Parking", "DSTV"], "vibeScore": 64, "topReviewThemes": ["highway access", "new developments", "budget stays"] }
+  {
+    "id": "westlands",
+    "name": "Westlands",
+    "coordinates": [
+      36.807,
+      -1.2674
+    ],
+    "demandBadge": "hot",
+    "topAmenities": [
+      "WiFi",
+      "Parking",
+      "Gym"
+    ],
+    "vibeScore": 85,
+    "topReviewThemes": [
+      "nightlife nearby",
+      "modern building",
+      "great restaurants"
+    ],
+    "countyId": "nairobi",
+    "countyCode": 47,
+    "priceTier": 5,
+    "demandScore": 73,
+    "avgNightlyPrice": 14517,
+    "activeListings": 12,
+    "occupancyRate": 0.5,
+    "supplyGap": 0,
+    "avgRating": 5,
+    "dataSource": "AB_NYC_2019.csv"
+  },
+  {
+    "id": "kilimani",
+    "name": "Kilimani",
+    "coordinates": [
+      36.782,
+      -1.2921
+    ],
+    "demandBadge": "hot",
+    "topAmenities": [
+      "WiFi",
+      "Parking",
+      "Security"
+    ],
+    "vibeScore": 78,
+    "topReviewThemes": [
+      "great location",
+      "clean",
+      "fast wifi"
+    ],
+    "countyId": "nairobi",
+    "countyCode": 47,
+    "priceTier": 4,
+    "demandScore": 68,
+    "avgNightlyPrice": 10908,
+    "activeListings": 12,
+    "occupancyRate": 0.49,
+    "supplyGap": 0,
+    "avgRating": 5,
+    "dataSource": "AB_NYC_2019.csv"
+  },
+  {
+    "id": "karen",
+    "name": "Karen",
+    "coordinates": [
+      36.7089,
+      -1.3197
+    ],
+    "demandBadge": "rising",
+    "topAmenities": [
+      "Pool",
+      "Parking",
+      "Generator"
+    ],
+    "vibeScore": 82,
+    "topReviewThemes": [
+      "peaceful",
+      "spacious",
+      "family friendly"
+    ],
+    "countyId": "nairobi",
+    "countyCode": 47,
+    "priceTier": 5,
+    "demandScore": 75,
+    "avgNightlyPrice": 10583,
+    "activeListings": 12,
+    "occupancyRate": 0.54,
+    "supplyGap": 0,
+    "avgRating": 5,
+    "dataSource": "AB_NYC_2019.csv"
+  },
+  {
+    "id": "lavington",
+    "name": "Lavington",
+    "coordinates": [
+      36.765,
+      -1.278
+    ],
+    "demandBadge": "rising",
+    "topAmenities": [
+      "WiFi",
+      "Security",
+      "DSTV"
+    ],
+    "vibeScore": 75,
+    "topReviewThemes": [
+      "quiet area",
+      "secure",
+      "good value"
+    ],
+    "countyId": "nairobi",
+    "countyCode": 47,
+    "priceTier": 4,
+    "demandScore": 78,
+    "avgNightlyPrice": 8433,
+    "activeListings": 12,
+    "occupancyRate": 0.68,
+    "supplyGap": 0,
+    "avgRating": 5,
+    "dataSource": "AB_NYC_2019.csv"
+  },
+  {
+    "id": "langata",
+    "name": "Langata",
+    "coordinates": [
+      36.82,
+      -1.34
+    ],
+    "demandBadge": "slow",
+    "topAmenities": [
+      "Parking",
+      "Kitchen",
+      "WiFi"
+    ],
+    "vibeScore": 70,
+    "topReviewThemes": [
+      "near safari park",
+      "affordable",
+      "green area"
+    ],
+    "countyId": "nairobi",
+    "countyCode": 47,
+    "priceTier": 2,
+    "demandScore": 49,
+    "avgNightlyPrice": 5850,
+    "activeListings": 12,
+    "occupancyRate": 0.29,
+    "supplyGap": 0,
+    "avgRating": 5,
+    "dataSource": "AB_NYC_2019.csv"
+  },
+  {
+    "id": "gigiri",
+    "name": "Gigiri",
+    "coordinates": [
+      36.79,
+      -1.235
+    ],
+    "demandBadge": "rising",
+    "topAmenities": [
+      "Security",
+      "Generator",
+      "WiFi"
+    ],
+    "vibeScore": 80,
+    "topReviewThemes": [
+      "diplomatic area",
+      "very secure",
+      "premium feel"
+    ],
+    "countyId": "nairobi",
+    "countyCode": 47,
+    "priceTier": 5,
+    "demandScore": 58,
+    "avgNightlyPrice": 7933,
+    "activeListings": 12,
+    "occupancyRate": 0.24,
+    "supplyGap": 0,
+    "avgRating": 5,
+    "dataSource": "AB_NYC_2019.csv"
+  },
+  {
+    "id": "parklands",
+    "name": "Parklands",
+    "coordinates": [
+      36.825,
+      -1.265
+    ],
+    "demandBadge": "hot",
+    "topAmenities": [
+      "WiFi",
+      "Parking",
+      "Kitchen"
+    ],
+    "vibeScore": 72,
+    "topReviewThemes": [
+      "central",
+      "diverse food",
+      "good transport"
+    ],
+    "countyId": "nairobi",
+    "countyCode": 47,
+    "priceTier": 3,
+    "demandScore": 50,
+    "avgNightlyPrice": 3767,
+    "activeListings": 12,
+    "occupancyRate": 0.23,
+    "supplyGap": 0,
+    "avgRating": 5,
+    "dataSource": "AB_NYC_2019.csv"
+  },
+  {
+    "id": "upperhill",
+    "name": "Upperhill",
+    "coordinates": [
+      36.815,
+      -1.295
+    ],
+    "demandBadge": "rising",
+    "topAmenities": [
+      "WiFi",
+      "Gym",
+      "Parking"
+    ],
+    "vibeScore": 74,
+    "topReviewThemes": [
+      "business district",
+      "modern",
+      "convenient"
+    ],
+    "countyId": "nairobi",
+    "countyCode": 47,
+    "priceTier": 3,
+    "demandScore": 57,
+    "avgNightlyPrice": 6542,
+    "activeListings": 12,
+    "occupancyRate": 0.37,
+    "supplyGap": 0,
+    "avgRating": 5,
+    "dataSource": "AB_NYC_2019.csv"
+  },
+  {
+    "id": "kileleshwa",
+    "name": "Kileleshwa",
+    "coordinates": [
+      36.775,
+      -1.285
+    ],
+    "demandBadge": "hot",
+    "topAmenities": [
+      "WiFi",
+      "Security",
+      "Air Conditioning"
+    ],
+    "vibeScore": 76,
+    "topReviewThemes": [
+      "trendy cafes",
+      "young professionals",
+      "walkable"
+    ],
+    "countyId": "nairobi",
+    "countyCode": 47,
+    "priceTier": 4,
+    "demandScore": 69,
+    "avgNightlyPrice": 6158,
+    "activeListings": 12,
+    "occupancyRate": 0.5,
+    "supplyGap": 0,
+    "avgRating": 5,
+    "dataSource": "AB_NYC_2019.csv"
+  },
+  {
+    "id": "runda",
+    "name": "Runda",
+    "coordinates": [
+      36.805,
+      -1.21
+    ],
+    "demandBadge": "slow",
+    "topAmenities": [
+      "Pool",
+      "Security",
+      "Generator"
+    ],
+    "vibeScore": 88,
+    "topReviewThemes": [
+      "luxury",
+      "gated community",
+      "very private"
+    ],
+    "countyId": "nairobi",
+    "countyCode": 47,
+    "priceTier": 5,
+    "demandScore": 66,
+    "avgNightlyPrice": 10967,
+    "activeListings": 12,
+    "occupancyRate": 0.38,
+    "supplyGap": 0,
+    "avgRating": 5,
+    "dataSource": "AB_NYC_2019.csv"
+  },
+  {
+    "id": "muthaiga",
+    "name": "Muthaiga",
+    "coordinates": [
+      36.84,
+      -1.245
+    ],
+    "demandBadge": "slow",
+    "topAmenities": [
+      "Security",
+      "Pool",
+      "Generator"
+    ],
+    "vibeScore": 86,
+    "topReviewThemes": [
+      "exclusive",
+      "tree-lined",
+      "premium"
+    ],
+    "countyId": "nairobi",
+    "countyCode": 47,
+    "priceTier": 5,
+    "demandScore": 76,
+    "avgNightlyPrice": 7883,
+    "activeListings": 12,
+    "occupancyRate": 0.57,
+    "supplyGap": 0,
+    "avgRating": 5,
+    "dataSource": "AB_NYC_2019.csv"
+  },
+  {
+    "id": "south-b",
+    "name": "South B",
+    "coordinates": [
+      36.835,
+      -1.31
+    ],
+    "demandBadge": "rising",
+    "topAmenities": [
+      "WiFi",
+      "Parking",
+      "Kitchen"
+    ],
+    "vibeScore": 68,
+    "topReviewThemes": [
+      "affordable",
+      "near airport",
+      "local vibe"
+    ],
+    "countyId": "nairobi",
+    "countyCode": 47,
+    "priceTier": 2,
+    "demandScore": 63,
+    "avgNightlyPrice": 6133,
+    "activeListings": 12,
+    "occupancyRate": 0.55,
+    "supplyGap": 0,
+    "avgRating": 5,
+    "dataSource": "AB_NYC_2019.csv"
+  },
+  {
+    "id": "south-c",
+    "name": "South C",
+    "coordinates": [
+      36.82,
+      -1.32
+    ],
+    "demandBadge": "rising",
+    "topAmenities": [
+      "WiFi",
+      "Parking",
+      "Security"
+    ],
+    "vibeScore": 66,
+    "topReviewThemes": [
+      "budget friendly",
+      "commuter hub",
+      "basic amenities"
+    ],
+    "countyId": "nairobi",
+    "countyCode": 47,
+    "priceTier": 1,
+    "demandScore": 61,
+    "avgNightlyPrice": 8550,
+    "activeListings": 12,
+    "occupancyRate": 0.59,
+    "supplyGap": 0,
+    "avgRating": 5,
+    "dataSource": "AB_NYC_2019.csv"
+  },
+  {
+    "id": "ngong-road",
+    "name": "Ngong Road",
+    "coordinates": [
+      36.78,
+      -1.305
+    ],
+    "demandBadge": "rising",
+    "topAmenities": [
+      "WiFi",
+      "Parking",
+      "Kitchen"
+    ],
+    "vibeScore": 71,
+    "topReviewThemes": [
+      "growing area",
+      "malls nearby",
+      "good value"
+    ],
+    "countyId": "nairobi",
+    "countyCode": 47,
+    "priceTier": 3,
+    "demandScore": 56,
+    "avgNightlyPrice": 8433,
+    "activeListings": 12,
+    "occupancyRate": 0.34,
+    "supplyGap": 0,
+    "avgRating": 5,
+    "dataSource": "AB_NYC_2019.csv"
+  },
+  {
+    "id": "thika-road",
+    "name": "Thika Road",
+    "coordinates": [
+      36.87,
+      -1.22
+    ],
+    "demandBadge": "slow",
+    "topAmenities": [
+      "WiFi",
+      "Parking",
+      "DSTV"
+    ],
+    "vibeScore": 64,
+    "topReviewThemes": [
+      "highway access",
+      "new developments",
+      "budget stays"
+    ],
+    "countyId": "nairobi",
+    "countyCode": 47,
+    "priceTier": 1,
+    "demandScore": 57,
+    "avgNightlyPrice": 8250,
+    "activeListings": 12,
+    "occupancyRate": 0.51,
+    "supplyGap": 0,
+    "avgRating": 5,
+    "dataSource": "AB_NYC_2019.csv"
+  }
 ]

@@ -1,0 +1,19 @@
+[
+  { "id": "westlands", "name": "Westlands", "center": [36.807, -1.267], "countyCode": 47 },
+  { "id": "dagoretti-north", "name": "Dagoretti North", "center": [36.765, -1.285], "countyCode": 47 },
+  { "id": "dagoretti-south", "name": "Dagoretti South", "center": [36.748, -1.305], "countyCode": 47 },
+  { "id": "langata", "name": "Langata", "center": [36.820, -1.340], "countyCode": 47 },
+  { "id": "kibra", "name": "Kibra", "center": [36.778, -1.313], "countyCode": 47 },
+  { "id": "roysambu", "name": "Roysambu", "center": [36.870, -1.220], "countyCode": 47 },
+  { "id": "kasarani", "name": "Kasarani", "center": [36.895, -1.225], "countyCode": 47 },
+  { "id": "ruaraka", "name": "Ruaraka", "center": [36.875, -1.245], "countyCode": 47 },
+  { "id": "embakasi-south", "name": "Embakasi South", "center": [36.820, -1.320], "countyCode": 47 },
+  { "id": "embakasi-north", "name": "Embakasi North", "center": [36.845, -1.285], "countyCode": 47 },
+  { "id": "embakasi-central", "name": "Embakasi Central", "center": [36.835, -1.300], "countyCode": 47 },
+  { "id": "embakasi-east", "name": "Embakasi East", "center": [36.855, -1.310], "countyCode": 47 },
+  { "id": "embakasi-west", "name": "Embakasi West", "center": [36.835, -1.310], "countyCode": 47 },
+  { "id": "makadara", "name": "Makadara", "center": [36.855, -1.295], "countyCode": 47 },
+  { "id": "kamukunji", "name": "Kamukunji", "center": [36.845, -1.275], "countyCode": 47 },
+  { "id": "starehe", "name": "Starehe", "center": [36.825, -1.285], "countyCode": 47 },
+  { "id": "mathare", "name": "Mathare", "center": [36.860, -1.265], "countyCode": 47 }
+]

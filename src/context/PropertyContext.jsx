@@ -1,6 +1,10 @@
 import { createContext, useContext, useState, useMemo } from 'react';
-import neighborhoods from '../data/neighborhoods.json';
-import listingsData from '../data/listings.json';
+import {
+  neighborhoods,
+  countyMarket,
+  enrichNeighborhood,
+  getListingsForNeighborhood,
+} from '../utils/dataService';
 import { calculateOptimalPrice, getConfidence, getPriceReasons } from '../utils/priceEngine';
 import {
   generateForecast,
@@ -10,15 +14,13 @@ import {
 
 const PropertyContext = createContext(null);
 
-const DEFAULT_PROPERTY = null;
-
 export function PropertyProvider({ children }) {
   const [property, setProperty] = useState(() => {
     try {
       const saved = localStorage.getItem('pumzika_property');
-      return saved ? JSON.parse(saved) : DEFAULT_PROPERTY;
+      return saved ? JSON.parse(saved) : null;
     } catch {
-      return DEFAULT_PROPERTY;
+      return null;
     }
   });
 
@@ -29,10 +31,16 @@ export function PropertyProvider({ children }) {
   });
 
   const neighborhood = useMemo(() => {
-    if (!property?.neighborhood) return neighborhoods.find((n) => n.id === 'kilimani');
+    if (!property?.neighborhood) return enrichNeighborhood(neighborhoods.find((n) => n.id === 'kilimani'));
     const id = property.neighborhood.toLowerCase().replace(/\s+/g, '-');
-    return neighborhoods.find((n) => n.id === id || n.name === property.neighborhood) ?? neighborhoods[1];
+    const raw = neighborhoods.find((n) => n.id === id || n.name === property.neighborhood);
+    return enrichNeighborhood(raw);
   }, [property]);
+
+  const county = useMemo(() => {
+    const id = neighborhood?.countyId ?? 'nairobi';
+    return countyMarket.find((c) => c.id === id) ?? countyMarket.find((c) => c.code === 47);
+  }, [neighborhood]);
 
   const recommendedPrice = useMemo(() => {
     if (!property || !neighborhood) return 8500;
@@ -62,11 +70,8 @@ export function PropertyProvider({ children }) {
   const forecastSummary = useMemo(() => getForecastSummary(forecast), [forecast]);
 
   const comps = useMemo(() => {
-    const nid = neighborhood?.id ?? 'kilimani';
-    const filtered = listingsData
-      .filter((l) => l.neighborhood === nid)
-      .sort((a, b) => a.price - b.price);
-    return filtered;
+    if (!neighborhood) return [];
+    return getListingsForNeighborhood(neighborhood.id);
   }, [neighborhood]);
 
   const saveProperty = (data) => {
@@ -84,7 +89,9 @@ export function PropertyProvider({ children }) {
     saveProperty,
     clearProperty,
     neighborhood,
+    county,
     neighborhoods,
+    countyMarket,
     recommendedPrice,
     confidence,
     priceReasons,
@@ -96,9 +103,7 @@ export function PropertyProvider({ children }) {
     setSettings,
   };
 
-  return (
-    <PropertyContext.Provider value={value}>{children}</PropertyContext.Provider>
-  );
+  return <PropertyContext.Provider value={value}>{children}</PropertyContext.Provider>;
 }
 
 export function useProperty() {

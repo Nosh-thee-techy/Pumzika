@@ -1,4 +1,5 @@
 import events from '../data/events.json';
+import { getComparablePrice, getForecastBaseline } from './dataService';
 
 const DAY_MULTIPLIERS = {
   0: 1.3,
@@ -28,29 +29,35 @@ function getEventMultiplier(dateStr, neighborhoodId) {
 }
 
 function getAmenityScore(amenities = []) {
-  if (amenities.includes('Pool')) return 1.12;
-  if (amenities.includes('Generator')) return 1.08;
-  if (amenities.includes('Air Conditioning')) return 1.05;
-  return 1.0;
+  let score = 1.0;
+  if (amenities.includes('Pool')) score *= 1.12;
+  if (amenities.includes('Generator')) score *= 1.08;
+  if (amenities.includes('Air Conditioning')) score *= 1.05;
+  if (amenities.includes('Gym')) score *= 1.04;
+  if (amenities.includes('Borehole Water')) score *= 1.03;
+  return score;
 }
 
 export function calculateOptimalPrice(property, neighborhood, date = new Date()) {
-  const dateStr =
-    typeof date === 'string'
-      ? date
-      : date.toISOString().split('T')[0];
+  const dateStr = typeof date === 'string' ? date : date.toISOString().split('T')[0];
   const day = new Date(dateStr + 'T12:00:00').getDay();
-  const base = neighborhood?.avgNightlyPrice ?? 7000;
   const neighborhoodId = neighborhood?.id ?? 'kilimani';
+
+  const baseline = getForecastBaseline(neighborhoodId, dateStr);
+  if (baseline?.recommendedPrice) {
+    const amenityScore = getAmenityScore(property?.amenities);
+    return Math.round((baseline.recommendedPrice * amenityScore) / 100) * 100;
+  }
+
+  const compBase = getComparablePrice(neighborhoodId, property?.bedrooms);
+  const base = compBase || (neighborhood?.avgNightlyPrice ?? 7000);
 
   const eventMultiplier = getEventMultiplier(dateStr, neighborhoodId);
   const dayMultiplier = DAY_MULTIPLIERS[day] ?? 1.0;
-  const amenityScore = getAmenityScore(property.amenities);
-  const bedroomMultiplier = BEDROOM_MULTIPLIERS[property.bedrooms] ?? 1.0;
+  const amenityScore = getAmenityScore(property?.amenities);
+  const bedroomMultiplier = BEDROOM_MULTIPLIERS[property?.bedrooms] ?? 1.0;
 
-  const optimal =
-    base * eventMultiplier * dayMultiplier * amenityScore * bedroomMultiplier;
-
+  const optimal = base * eventMultiplier * dayMultiplier * amenityScore * bedroomMultiplier;
   return Math.round(optimal / 100) * 100;
 }
 
@@ -60,10 +67,7 @@ export function getPriceChangePercent(recommended, current) {
 }
 
 export function getPriceReasons(property, neighborhood, recommendedPrice, date = new Date()) {
-  const dateStr =
-    typeof date === 'string'
-      ? date
-      : date.toISOString().split('T')[0];
+  const dateStr = typeof date === 'string' ? date : date.toISOString().split('T')[0];
   const event = events.find(
     (e) =>
       e.date === dateStr &&
@@ -80,7 +84,7 @@ export function getPriceReasons(property, neighborhood, recommendedPrice, date =
     });
   }
 
-  const compPrice = Math.round((neighborhood?.avgNightlyPrice ?? 7000) * (BEDROOM_MULTIPLIERS[property.bedrooms] ?? 1));
+  const compPrice = getComparablePrice(neighborhood?.id, property?.bedrooms);
   reasons.push({
     icon: '🏘️',
     text: `Similar ${property.bedrooms} listings nearby averaging Ksh ${compPrice.toLocaleString()} tonight`,
@@ -89,16 +93,19 @@ export function getPriceReasons(property, neighborhood, recommendedPrice, date =
   const occ = Math.round((neighborhood?.occupancyRate ?? 0.7) * 100);
   reasons.push({
     icon: '📈',
-    text: `Neighborhood occupancy: ${occ}% — ${occ >= 70 ? 'above' : 'near'} market average`,
+    text: `Your occupancy last 7 days: ${occ}% — ${occ >= 70 ? 'above' : 'near'} neighborhood avg`,
   });
 
   return reasons.slice(0, 3);
 }
 
 export function getConfidence(property, neighborhood) {
-  let score = 72;
+  let score = 68;
+  const listingCount = neighborhood?.activeListings ?? 0;
+  if (listingCount >= 5) score += 10;
   if (property.amenities?.length >= 3) score += 8;
   if (neighborhood?.supplyGap > 8) score += 7;
   if (neighborhood?.demandScore > 75) score += 5;
+  if (neighborhood?.avgRating >= 4.5) score += 4;
   return Math.min(95, score);
 }

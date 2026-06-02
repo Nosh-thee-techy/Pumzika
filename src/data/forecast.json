@@ -1,6 +1,3449 @@
 {
+  "westlands": [
+    {
+      "date": "2026-06-02",
+      "occupancy": 0.6,
+      "recommendedPrice": 17500,
+      "demandLevel": "low",
+      "event": {
+        "name": "Madaraka Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-03",
+      "occupancy": 0.47,
+      "recommendedPrice": 13400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-04",
+      "occupancy": 0.47,
+      "recommendedPrice": 14900,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-05",
+      "occupancy": 0.59,
+      "recommendedPrice": 20600,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-06",
+      "occupancy": 0.59,
+      "recommendedPrice": 21400,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-07",
+      "occupancy": 0.59,
+      "recommendedPrice": 19900,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-08",
+      "occupancy": 0.68,
+      "recommendedPrice": 20300,
+      "demandLevel": "medium",
+      "event": {
+        "name": "Nairobi Marathon",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-09",
+      "occupancy": 0.54,
+      "recommendedPrice": 15200,
+      "demandLevel": "low",
+      "event": {
+        "name": "Post-Marathon Recovery",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-10",
+      "occupancy": 0.47,
+      "recommendedPrice": 13400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-11",
+      "occupancy": 0.47,
+      "recommendedPrice": 14900,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-12",
+      "occupancy": 0.59,
+      "recommendedPrice": 20600,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-13",
+      "occupancy": 0.59,
+      "recommendedPrice": 21400,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-14",
+      "occupancy": 0.71,
+      "recommendedPrice": 26800,
+      "demandLevel": "medium",
+      "event": {
+        "name": "Koroga Festival",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-15",
+      "occupancy": 0.55,
+      "recommendedPrice": 15900,
+      "demandLevel": "low",
+      "event": {
+        "name": "Father's Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "occupancy": 0.47,
+      "recommendedPrice": 12700,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-17",
+      "occupancy": 0.47,
+      "recommendedPrice": 13400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-18",
+      "occupancy": 0.47,
+      "recommendedPrice": 14900,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-19",
+      "occupancy": 0.59,
+      "recommendedPrice": 20600,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-20",
+      "occupancy": 0.69,
+      "recommendedPrice": 27800,
+      "demandLevel": "medium",
+      "event": {
+        "name": "Tech Conference Week",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-21",
+      "occupancy": 0.73,
+      "recommendedPrice": 27800,
+      "demandLevel": "medium",
+      "event": {
+        "name": "Tech Conference Weekend",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-22",
+      "occupancy": 0.47,
+      "recommendedPrice": 12700,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-23",
+      "occupancy": 0.47,
+      "recommendedPrice": 12700,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-24",
+      "occupancy": 0.47,
+      "recommendedPrice": 13400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-25",
+      "occupancy": 0.47,
+      "recommendedPrice": 14900,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-26",
+      "occupancy": 0.59,
+      "recommendedPrice": 20600,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-27",
+      "occupancy": 0.66,
+      "recommendedPrice": 26100,
+      "demandLevel": "medium",
+      "event": {
+        "name": "End of Month Payday",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-28",
+      "occupancy": 0.71,
+      "recommendedPrice": 26800,
+      "demandLevel": "medium",
+      "event": {
+        "name": "Weekend Payday Surge",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-29",
+      "occupancy": 0.57,
+      "recommendedPrice": 16300,
+      "demandLevel": "low",
+      "event": {
+        "name": "Sunday Checkout Peak",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-30",
+      "occupancy": 0.47,
+      "recommendedPrice": 12700,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-07-01",
+      "occupancy": 0.53,
+      "recommendedPrice": 16600,
+      "demandLevel": "low",
+      "event": null
+    }
+  ],
   "kilimani": [
-    { "date": "2025-06-01", "occupancy": 0.91, "recommendedPrice": 9500, "demandLevel": "peak" },
-    { "date": "2025-06-02", "occupancy": 0.88, "recommendedPrice": 9200, "demandLevel": "high" }
+    {
+      "date": "2026-06-02",
+      "occupancy": 0.59,
+      "recommendedPrice": 13200,
+      "demandLevel": "low",
+      "event": {
+        "name": "Madaraka Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-03",
+      "occupancy": 0.46,
+      "recommendedPrice": 10100,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-04",
+      "occupancy": 0.46,
+      "recommendedPrice": 11200,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-05",
+      "occupancy": 0.58,
+      "recommendedPrice": 15500,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-06",
+      "occupancy": 0.58,
+      "recommendedPrice": 16100,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-07",
+      "occupancy": 0.58,
+      "recommendedPrice": 14900,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-08",
+      "occupancy": 0.67,
+      "recommendedPrice": 15300,
+      "demandLevel": "medium",
+      "event": {
+        "name": "Nairobi Marathon",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-09",
+      "occupancy": 0.53,
+      "recommendedPrice": 11400,
+      "demandLevel": "low",
+      "event": {
+        "name": "Post-Marathon Recovery",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-10",
+      "occupancy": 0.46,
+      "recommendedPrice": 10100,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-11",
+      "occupancy": 0.46,
+      "recommendedPrice": 11200,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-12",
+      "occupancy": 0.58,
+      "recommendedPrice": 15500,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-13",
+      "occupancy": 0.58,
+      "recommendedPrice": 16100,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-14",
+      "occupancy": 0.7,
+      "recommendedPrice": 20100,
+      "demandLevel": "medium",
+      "event": {
+        "name": "Koroga Festival",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-15",
+      "occupancy": 0.54,
+      "recommendedPrice": 11900,
+      "demandLevel": "low",
+      "event": {
+        "name": "Father's Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "occupancy": 0.46,
+      "recommendedPrice": 9500,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-17",
+      "occupancy": 0.46,
+      "recommendedPrice": 10100,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-18",
+      "occupancy": 0.46,
+      "recommendedPrice": 11200,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-19",
+      "occupancy": 0.58,
+      "recommendedPrice": 15500,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-20",
+      "occupancy": 0.68,
+      "recommendedPrice": 20900,
+      "demandLevel": "medium",
+      "event": {
+        "name": "Tech Conference Week",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-21",
+      "occupancy": 0.58,
+      "recommendedPrice": 14900,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-22",
+      "occupancy": 0.46,
+      "recommendedPrice": 9500,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-23",
+      "occupancy": 0.46,
+      "recommendedPrice": 9500,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-24",
+      "occupancy": 0.46,
+      "recommendedPrice": 10100,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-25",
+      "occupancy": 0.46,
+      "recommendedPrice": 11200,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-26",
+      "occupancy": 0.58,
+      "recommendedPrice": 15500,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-27",
+      "occupancy": 0.65,
+      "recommendedPrice": 19600,
+      "demandLevel": "medium",
+      "event": {
+        "name": "End of Month Payday",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-28",
+      "occupancy": 0.7,
+      "recommendedPrice": 20100,
+      "demandLevel": "medium",
+      "event": {
+        "name": "Weekend Payday Surge",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-29",
+      "occupancy": 0.56,
+      "recommendedPrice": 12200,
+      "demandLevel": "low",
+      "event": {
+        "name": "Sunday Checkout Peak",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-30",
+      "occupancy": 0.46,
+      "recommendedPrice": 9500,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-07-01",
+      "occupancy": 0.52,
+      "recommendedPrice": 12500,
+      "demandLevel": "low",
+      "event": null
+    }
+  ],
+  "karen": [
+    {
+      "date": "2026-06-02",
+      "occupancy": 0.64,
+      "recommendedPrice": 12800,
+      "demandLevel": "low",
+      "event": {
+        "name": "Madaraka Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-03",
+      "occupancy": 0.51,
+      "recommendedPrice": 9800,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-04",
+      "occupancy": 0.51,
+      "recommendedPrice": 10900,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-05",
+      "occupancy": 0.63,
+      "recommendedPrice": 15000,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-06",
+      "occupancy": 0.63,
+      "recommendedPrice": 15600,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-07",
+      "occupancy": 0.63,
+      "recommendedPrice": 14500,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-08",
+      "occupancy": 0.51,
+      "recommendedPrice": 9300,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-09",
+      "occupancy": 0.51,
+      "recommendedPrice": 9300,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-10",
+      "occupancy": 0.51,
+      "recommendedPrice": 9800,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-11",
+      "occupancy": 0.51,
+      "recommendedPrice": 10900,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-12",
+      "occupancy": 0.63,
+      "recommendedPrice": 15000,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-13",
+      "occupancy": 0.63,
+      "recommendedPrice": 15600,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-14",
+      "occupancy": 0.63,
+      "recommendedPrice": 14500,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-15",
+      "occupancy": 0.59,
+      "recommendedPrice": 11600,
+      "demandLevel": "low",
+      "event": {
+        "name": "Father's Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "occupancy": 0.51,
+      "recommendedPrice": 9300,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-17",
+      "occupancy": 0.51,
+      "recommendedPrice": 9800,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-18",
+      "occupancy": 0.51,
+      "recommendedPrice": 10900,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-19",
+      "occupancy": 0.63,
+      "recommendedPrice": 15000,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-20",
+      "occupancy": 0.63,
+      "recommendedPrice": 15600,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-21",
+      "occupancy": 0.63,
+      "recommendedPrice": 14500,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-22",
+      "occupancy": 0.51,
+      "recommendedPrice": 9300,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-23",
+      "occupancy": 0.51,
+      "recommendedPrice": 9300,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-24",
+      "occupancy": 0.51,
+      "recommendedPrice": 9800,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-25",
+      "occupancy": 0.51,
+      "recommendedPrice": 10900,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-26",
+      "occupancy": 0.63,
+      "recommendedPrice": 15000,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-27",
+      "occupancy": 0.7,
+      "recommendedPrice": 19000,
+      "demandLevel": "medium",
+      "event": {
+        "name": "End of Month Payday",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-28",
+      "occupancy": 0.75,
+      "recommendedPrice": 19500,
+      "demandLevel": "medium",
+      "event": {
+        "name": "Weekend Payday Surge",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-29",
+      "occupancy": 0.61,
+      "recommendedPrice": 11800,
+      "demandLevel": "low",
+      "event": {
+        "name": "Sunday Checkout Peak",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-30",
+      "occupancy": 0.51,
+      "recommendedPrice": 9300,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-07-01",
+      "occupancy": 0.57,
+      "recommendedPrice": 12100,
+      "demandLevel": "low",
+      "event": null
+    }
+  ],
+  "lavington": [
+    {
+      "date": "2026-06-02",
+      "occupancy": 0.78,
+      "recommendedPrice": 10200,
+      "demandLevel": "medium",
+      "event": {
+        "name": "Madaraka Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-03",
+      "occupancy": 0.65,
+      "recommendedPrice": 7800,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-04",
+      "occupancy": 0.65,
+      "recommendedPrice": 8700,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-05",
+      "occupancy": 0.77,
+      "recommendedPrice": 12000,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-06",
+      "occupancy": 0.77,
+      "recommendedPrice": 12400,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-07",
+      "occupancy": 0.77,
+      "recommendedPrice": 11500,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-08",
+      "occupancy": 0.65,
+      "recommendedPrice": 7400,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-09",
+      "occupancy": 0.65,
+      "recommendedPrice": 7400,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-10",
+      "occupancy": 0.65,
+      "recommendedPrice": 7800,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-11",
+      "occupancy": 0.65,
+      "recommendedPrice": 8700,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-12",
+      "occupancy": 0.77,
+      "recommendedPrice": 12000,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-13",
+      "occupancy": 0.77,
+      "recommendedPrice": 12400,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-14",
+      "occupancy": 0.77,
+      "recommendedPrice": 11500,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-15",
+      "occupancy": 0.73,
+      "recommendedPrice": 9200,
+      "demandLevel": "medium",
+      "event": {
+        "name": "Father's Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "occupancy": 0.65,
+      "recommendedPrice": 7400,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-17",
+      "occupancy": 0.65,
+      "recommendedPrice": 7800,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-18",
+      "occupancy": 0.65,
+      "recommendedPrice": 8700,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-19",
+      "occupancy": 0.77,
+      "recommendedPrice": 12000,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-20",
+      "occupancy": 0.77,
+      "recommendedPrice": 12400,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-21",
+      "occupancy": 0.77,
+      "recommendedPrice": 11500,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-22",
+      "occupancy": 0.65,
+      "recommendedPrice": 7400,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-23",
+      "occupancy": 0.65,
+      "recommendedPrice": 7400,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-24",
+      "occupancy": 0.65,
+      "recommendedPrice": 7800,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-25",
+      "occupancy": 0.65,
+      "recommendedPrice": 8700,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-26",
+      "occupancy": 0.77,
+      "recommendedPrice": 12000,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-27",
+      "occupancy": 0.84,
+      "recommendedPrice": 15200,
+      "demandLevel": "high",
+      "event": {
+        "name": "End of Month Payday",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-28",
+      "occupancy": 0.89,
+      "recommendedPrice": 15600,
+      "demandLevel": "high",
+      "event": {
+        "name": "Weekend Payday Surge",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-29",
+      "occupancy": 0.75,
+      "recommendedPrice": 9400,
+      "demandLevel": "medium",
+      "event": {
+        "name": "Sunday Checkout Peak",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-30",
+      "occupancy": 0.65,
+      "recommendedPrice": 7400,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-07-01",
+      "occupancy": 0.71,
+      "recommendedPrice": 9600,
+      "demandLevel": "medium",
+      "event": null
+    }
+  ],
+  "langata": [
+    {
+      "date": "2026-06-02",
+      "occupancy": 0.39,
+      "recommendedPrice": 7100,
+      "demandLevel": "cold",
+      "event": {
+        "name": "Madaraka Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-03",
+      "occupancy": 0.35,
+      "recommendedPrice": 5400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-04",
+      "occupancy": 0.35,
+      "recommendedPrice": 6000,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-05",
+      "occupancy": 0.38,
+      "recommendedPrice": 8300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-06",
+      "occupancy": 0.38,
+      "recommendedPrice": 8600,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-07",
+      "occupancy": 0.38,
+      "recommendedPrice": 8000,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-08",
+      "occupancy": 0.35,
+      "recommendedPrice": 5100,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-09",
+      "occupancy": 0.35,
+      "recommendedPrice": 5100,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-10",
+      "occupancy": 0.35,
+      "recommendedPrice": 5400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-11",
+      "occupancy": 0.35,
+      "recommendedPrice": 6000,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-12",
+      "occupancy": 0.38,
+      "recommendedPrice": 8300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-13",
+      "occupancy": 0.38,
+      "recommendedPrice": 8600,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-14",
+      "occupancy": 0.38,
+      "recommendedPrice": 8000,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-15",
+      "occupancy": 0.35,
+      "recommendedPrice": 6400,
+      "demandLevel": "cold",
+      "event": {
+        "name": "Father's Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "occupancy": 0.35,
+      "recommendedPrice": 5100,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-17",
+      "occupancy": 0.35,
+      "recommendedPrice": 5400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-18",
+      "occupancy": 0.35,
+      "recommendedPrice": 6000,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-19",
+      "occupancy": 0.38,
+      "recommendedPrice": 8300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-20",
+      "occupancy": 0.38,
+      "recommendedPrice": 8600,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-21",
+      "occupancy": 0.38,
+      "recommendedPrice": 8000,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-22",
+      "occupancy": 0.35,
+      "recommendedPrice": 5100,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-23",
+      "occupancy": 0.35,
+      "recommendedPrice": 5100,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-24",
+      "occupancy": 0.35,
+      "recommendedPrice": 5400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-25",
+      "occupancy": 0.35,
+      "recommendedPrice": 6000,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-26",
+      "occupancy": 0.38,
+      "recommendedPrice": 8300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-27",
+      "occupancy": 0.45,
+      "recommendedPrice": 10500,
+      "demandLevel": "cold",
+      "event": {
+        "name": "End of Month Payday",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-28",
+      "occupancy": 0.5,
+      "recommendedPrice": 10800,
+      "demandLevel": "cold",
+      "event": {
+        "name": "Weekend Payday Surge",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-29",
+      "occupancy": 0.36,
+      "recommendedPrice": 6500,
+      "demandLevel": "cold",
+      "event": {
+        "name": "Sunday Checkout Peak",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-30",
+      "occupancy": 0.35,
+      "recommendedPrice": 5100,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-07-01",
+      "occupancy": 0.35,
+      "recommendedPrice": 6700,
+      "demandLevel": "cold",
+      "event": null
+    }
+  ],
+  "gigiri": [
+    {
+      "date": "2026-06-02",
+      "occupancy": 0.35,
+      "recommendedPrice": 9600,
+      "demandLevel": "cold",
+      "event": {
+        "name": "Madaraka Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-03",
+      "occupancy": 0.35,
+      "recommendedPrice": 7300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-04",
+      "occupancy": 0.35,
+      "recommendedPrice": 8200,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-05",
+      "occupancy": 0.35,
+      "recommendedPrice": 11300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-06",
+      "occupancy": 0.35,
+      "recommendedPrice": 11700,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-07",
+      "occupancy": 0.35,
+      "recommendedPrice": 10900,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-08",
+      "occupancy": 0.35,
+      "recommendedPrice": 6900,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-09",
+      "occupancy": 0.35,
+      "recommendedPrice": 6900,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-10",
+      "occupancy": 0.35,
+      "recommendedPrice": 7300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-11",
+      "occupancy": 0.35,
+      "recommendedPrice": 8200,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-12",
+      "occupancy": 0.35,
+      "recommendedPrice": 11300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-13",
+      "occupancy": 0.35,
+      "recommendedPrice": 11700,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-14",
+      "occupancy": 0.35,
+      "recommendedPrice": 10900,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-15",
+      "occupancy": 0.35,
+      "recommendedPrice": 8700,
+      "demandLevel": "cold",
+      "event": {
+        "name": "Father's Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "occupancy": 0.35,
+      "recommendedPrice": 6900,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-17",
+      "occupancy": 0.35,
+      "recommendedPrice": 7300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-18",
+      "occupancy": 0.35,
+      "recommendedPrice": 8200,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-19",
+      "occupancy": 0.35,
+      "recommendedPrice": 11300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-20",
+      "occupancy": 0.35,
+      "recommendedPrice": 11700,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-21",
+      "occupancy": 0.35,
+      "recommendedPrice": 10900,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-22",
+      "occupancy": 0.35,
+      "recommendedPrice": 6900,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-23",
+      "occupancy": 0.35,
+      "recommendedPrice": 6900,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-24",
+      "occupancy": 0.35,
+      "recommendedPrice": 7300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-25",
+      "occupancy": 0.35,
+      "recommendedPrice": 8200,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-26",
+      "occupancy": 0.35,
+      "recommendedPrice": 11300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-27",
+      "occupancy": 0.4,
+      "recommendedPrice": 14300,
+      "demandLevel": "cold",
+      "event": {
+        "name": "End of Month Payday",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-28",
+      "occupancy": 0.45,
+      "recommendedPrice": 14600,
+      "demandLevel": "cold",
+      "event": {
+        "name": "Weekend Payday Surge",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-29",
+      "occupancy": 0.35,
+      "recommendedPrice": 8900,
+      "demandLevel": "cold",
+      "event": {
+        "name": "Sunday Checkout Peak",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-30",
+      "occupancy": 0.35,
+      "recommendedPrice": 6900,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-07-01",
+      "occupancy": 0.35,
+      "recommendedPrice": 9100,
+      "demandLevel": "cold",
+      "event": null
+    }
+  ],
+  "parklands": [
+    {
+      "date": "2026-06-02",
+      "occupancy": 0.35,
+      "recommendedPrice": 4500,
+      "demandLevel": "cold",
+      "event": {
+        "name": "Madaraka Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-03",
+      "occupancy": 0.35,
+      "recommendedPrice": 3500,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-04",
+      "occupancy": 0.35,
+      "recommendedPrice": 3900,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-05",
+      "occupancy": 0.35,
+      "recommendedPrice": 5400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-06",
+      "occupancy": 0.35,
+      "recommendedPrice": 5500,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-07",
+      "occupancy": 0.35,
+      "recommendedPrice": 5200,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-08",
+      "occupancy": 0.35,
+      "recommendedPrice": 3300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-09",
+      "occupancy": 0.35,
+      "recommendedPrice": 3300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-10",
+      "occupancy": 0.35,
+      "recommendedPrice": 3500,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-11",
+      "occupancy": 0.35,
+      "recommendedPrice": 3900,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-12",
+      "occupancy": 0.35,
+      "recommendedPrice": 5400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-13",
+      "occupancy": 0.35,
+      "recommendedPrice": 5500,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-14",
+      "occupancy": 0.44,
+      "recommendedPrice": 7000,
+      "demandLevel": "cold",
+      "event": {
+        "name": "Koroga Festival",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-15",
+      "occupancy": 0.35,
+      "recommendedPrice": 4100,
+      "demandLevel": "cold",
+      "event": {
+        "name": "Father's Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "occupancy": 0.35,
+      "recommendedPrice": 3300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-17",
+      "occupancy": 0.35,
+      "recommendedPrice": 3500,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-18",
+      "occupancy": 0.35,
+      "recommendedPrice": 3900,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-19",
+      "occupancy": 0.35,
+      "recommendedPrice": 5400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-20",
+      "occupancy": 0.35,
+      "recommendedPrice": 5500,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-21",
+      "occupancy": 0.35,
+      "recommendedPrice": 5200,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-22",
+      "occupancy": 0.35,
+      "recommendedPrice": 3300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-23",
+      "occupancy": 0.35,
+      "recommendedPrice": 3300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-24",
+      "occupancy": 0.35,
+      "recommendedPrice": 3500,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-25",
+      "occupancy": 0.35,
+      "recommendedPrice": 3900,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-26",
+      "occupancy": 0.35,
+      "recommendedPrice": 5400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-27",
+      "occupancy": 0.39,
+      "recommendedPrice": 6800,
+      "demandLevel": "cold",
+      "event": {
+        "name": "End of Month Payday",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-28",
+      "occupancy": 0.44,
+      "recommendedPrice": 7000,
+      "demandLevel": "cold",
+      "event": {
+        "name": "Weekend Payday Surge",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-29",
+      "occupancy": 0.35,
+      "recommendedPrice": 4200,
+      "demandLevel": "cold",
+      "event": {
+        "name": "Sunday Checkout Peak",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-30",
+      "occupancy": 0.35,
+      "recommendedPrice": 3300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-07-01",
+      "occupancy": 0.35,
+      "recommendedPrice": 4300,
+      "demandLevel": "cold",
+      "event": null
+    }
+  ],
+  "upperhill": [
+    {
+      "date": "2026-06-02",
+      "occupancy": 0.47,
+      "recommendedPrice": 7900,
+      "demandLevel": "cold",
+      "event": {
+        "name": "Madaraka Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-03",
+      "occupancy": 0.35,
+      "recommendedPrice": 6100,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-04",
+      "occupancy": 0.35,
+      "recommendedPrice": 6700,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-05",
+      "occupancy": 0.46,
+      "recommendedPrice": 9300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-06",
+      "occupancy": 0.46,
+      "recommendedPrice": 9600,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-07",
+      "occupancy": 0.46,
+      "recommendedPrice": 8900,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-08",
+      "occupancy": 0.55,
+      "recommendedPrice": 9200,
+      "demandLevel": "low",
+      "event": {
+        "name": "Nairobi Marathon",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-09",
+      "occupancy": 0.35,
+      "recommendedPrice": 5700,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-10",
+      "occupancy": 0.35,
+      "recommendedPrice": 6100,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-11",
+      "occupancy": 0.35,
+      "recommendedPrice": 6700,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-12",
+      "occupancy": 0.46,
+      "recommendedPrice": 9300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-13",
+      "occupancy": 0.46,
+      "recommendedPrice": 9600,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-14",
+      "occupancy": 0.46,
+      "recommendedPrice": 8900,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-15",
+      "occupancy": 0.42,
+      "recommendedPrice": 7200,
+      "demandLevel": "cold",
+      "event": {
+        "name": "Father's Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "occupancy": 0.35,
+      "recommendedPrice": 5700,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-17",
+      "occupancy": 0.35,
+      "recommendedPrice": 6100,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-18",
+      "occupancy": 0.35,
+      "recommendedPrice": 6700,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-19",
+      "occupancy": 0.46,
+      "recommendedPrice": 9300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-20",
+      "occupancy": 0.56,
+      "recommendedPrice": 12500,
+      "demandLevel": "low",
+      "event": {
+        "name": "Tech Conference Week",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-21",
+      "occupancy": 0.6,
+      "recommendedPrice": 12500,
+      "demandLevel": "low",
+      "event": {
+        "name": "Tech Conference Weekend",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-22",
+      "occupancy": 0.35,
+      "recommendedPrice": 5700,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-23",
+      "occupancy": 0.35,
+      "recommendedPrice": 5700,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-24",
+      "occupancy": 0.35,
+      "recommendedPrice": 6100,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-25",
+      "occupancy": 0.35,
+      "recommendedPrice": 6700,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-26",
+      "occupancy": 0.46,
+      "recommendedPrice": 9300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-27",
+      "occupancy": 0.53,
+      "recommendedPrice": 11800,
+      "demandLevel": "low",
+      "event": {
+        "name": "End of Month Payday",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-28",
+      "occupancy": 0.58,
+      "recommendedPrice": 12100,
+      "demandLevel": "low",
+      "event": {
+        "name": "Weekend Payday Surge",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-29",
+      "occupancy": 0.44,
+      "recommendedPrice": 7300,
+      "demandLevel": "cold",
+      "event": {
+        "name": "Sunday Checkout Peak",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-30",
+      "occupancy": 0.35,
+      "recommendedPrice": 5700,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-07-01",
+      "occupancy": 0.4,
+      "recommendedPrice": 7500,
+      "demandLevel": "cold",
+      "event": null
+    }
+  ],
+  "kileleshwa": [
+    {
+      "date": "2026-06-02",
+      "occupancy": 0.6,
+      "recommendedPrice": 7400,
+      "demandLevel": "low",
+      "event": {
+        "name": "Madaraka Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-03",
+      "occupancy": 0.47,
+      "recommendedPrice": 5700,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-04",
+      "occupancy": 0.47,
+      "recommendedPrice": 6300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-05",
+      "occupancy": 0.59,
+      "recommendedPrice": 8700,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-06",
+      "occupancy": 0.59,
+      "recommendedPrice": 9100,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-07",
+      "occupancy": 0.59,
+      "recommendedPrice": 8400,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-08",
+      "occupancy": 0.68,
+      "recommendedPrice": 8600,
+      "demandLevel": "medium",
+      "event": {
+        "name": "Nairobi Marathon",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-09",
+      "occupancy": 0.47,
+      "recommendedPrice": 5400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-10",
+      "occupancy": 0.47,
+      "recommendedPrice": 5700,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-11",
+      "occupancy": 0.47,
+      "recommendedPrice": 6300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-12",
+      "occupancy": 0.59,
+      "recommendedPrice": 8700,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-13",
+      "occupancy": 0.59,
+      "recommendedPrice": 9100,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-14",
+      "occupancy": 0.59,
+      "recommendedPrice": 8400,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-15",
+      "occupancy": 0.55,
+      "recommendedPrice": 6700,
+      "demandLevel": "low",
+      "event": {
+        "name": "Father's Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "occupancy": 0.47,
+      "recommendedPrice": 5400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-17",
+      "occupancy": 0.47,
+      "recommendedPrice": 5700,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-18",
+      "occupancy": 0.47,
+      "recommendedPrice": 6300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-19",
+      "occupancy": 0.59,
+      "recommendedPrice": 8700,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-20",
+      "occupancy": 0.59,
+      "recommendedPrice": 9100,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-21",
+      "occupancy": 0.59,
+      "recommendedPrice": 8400,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-22",
+      "occupancy": 0.47,
+      "recommendedPrice": 5400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-23",
+      "occupancy": 0.47,
+      "recommendedPrice": 5400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-24",
+      "occupancy": 0.47,
+      "recommendedPrice": 5700,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-25",
+      "occupancy": 0.47,
+      "recommendedPrice": 6300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-26",
+      "occupancy": 0.59,
+      "recommendedPrice": 8700,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-27",
+      "occupancy": 0.66,
+      "recommendedPrice": 11100,
+      "demandLevel": "medium",
+      "event": {
+        "name": "End of Month Payday",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-28",
+      "occupancy": 0.71,
+      "recommendedPrice": 11400,
+      "demandLevel": "medium",
+      "event": {
+        "name": "Weekend Payday Surge",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-29",
+      "occupancy": 0.57,
+      "recommendedPrice": 6900,
+      "demandLevel": "low",
+      "event": {
+        "name": "Sunday Checkout Peak",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-30",
+      "occupancy": 0.47,
+      "recommendedPrice": 5400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-07-01",
+      "occupancy": 0.53,
+      "recommendedPrice": 7000,
+      "demandLevel": "low",
+      "event": null
+    }
+  ],
+  "runda": [
+    {
+      "date": "2026-06-02",
+      "occupancy": 0.48,
+      "recommendedPrice": 13200,
+      "demandLevel": "cold",
+      "event": {
+        "name": "Madaraka Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-03",
+      "occupancy": 0.35,
+      "recommendedPrice": 10200,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-04",
+      "occupancy": 0.35,
+      "recommendedPrice": 11300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-05",
+      "occupancy": 0.47,
+      "recommendedPrice": 15600,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-06",
+      "occupancy": 0.47,
+      "recommendedPrice": 16200,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-07",
+      "occupancy": 0.47,
+      "recommendedPrice": 15000,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-08",
+      "occupancy": 0.35,
+      "recommendedPrice": 9600,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-09",
+      "occupancy": 0.35,
+      "recommendedPrice": 9600,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-10",
+      "occupancy": 0.35,
+      "recommendedPrice": 10200,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-11",
+      "occupancy": 0.35,
+      "recommendedPrice": 11300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-12",
+      "occupancy": 0.47,
+      "recommendedPrice": 15600,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-13",
+      "occupancy": 0.47,
+      "recommendedPrice": 16200,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-14",
+      "occupancy": 0.47,
+      "recommendedPrice": 15000,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-15",
+      "occupancy": 0.43,
+      "recommendedPrice": 12000,
+      "demandLevel": "cold",
+      "event": {
+        "name": "Father's Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "occupancy": 0.35,
+      "recommendedPrice": 9600,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-17",
+      "occupancy": 0.35,
+      "recommendedPrice": 10200,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-18",
+      "occupancy": 0.35,
+      "recommendedPrice": 11300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-19",
+      "occupancy": 0.47,
+      "recommendedPrice": 15600,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-20",
+      "occupancy": 0.47,
+      "recommendedPrice": 16200,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-21",
+      "occupancy": 0.47,
+      "recommendedPrice": 15000,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-22",
+      "occupancy": 0.35,
+      "recommendedPrice": 9600,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-23",
+      "occupancy": 0.35,
+      "recommendedPrice": 9600,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-24",
+      "occupancy": 0.35,
+      "recommendedPrice": 10200,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-25",
+      "occupancy": 0.35,
+      "recommendedPrice": 11300,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-26",
+      "occupancy": 0.47,
+      "recommendedPrice": 15600,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-27",
+      "occupancy": 0.54,
+      "recommendedPrice": 19700,
+      "demandLevel": "low",
+      "event": {
+        "name": "End of Month Payday",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-28",
+      "occupancy": 0.59,
+      "recommendedPrice": 20300,
+      "demandLevel": "low",
+      "event": {
+        "name": "Weekend Payday Surge",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-29",
+      "occupancy": 0.45,
+      "recommendedPrice": 12300,
+      "demandLevel": "cold",
+      "event": {
+        "name": "Sunday Checkout Peak",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-30",
+      "occupancy": 0.35,
+      "recommendedPrice": 9600,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-07-01",
+      "occupancy": 0.41,
+      "recommendedPrice": 12500,
+      "demandLevel": "cold",
+      "event": null
+    }
+  ],
+  "muthaiga": [
+    {
+      "date": "2026-06-02",
+      "occupancy": 0.67,
+      "recommendedPrice": 9500,
+      "demandLevel": "medium",
+      "event": {
+        "name": "Madaraka Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-03",
+      "occupancy": 0.54,
+      "recommendedPrice": 7300,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-04",
+      "occupancy": 0.54,
+      "recommendedPrice": 8100,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-05",
+      "occupancy": 0.66,
+      "recommendedPrice": 11200,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-06",
+      "occupancy": 0.66,
+      "recommendedPrice": 11600,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-07",
+      "occupancy": 0.66,
+      "recommendedPrice": 10800,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-08",
+      "occupancy": 0.54,
+      "recommendedPrice": 6900,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-09",
+      "occupancy": 0.54,
+      "recommendedPrice": 6900,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-10",
+      "occupancy": 0.54,
+      "recommendedPrice": 7300,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-11",
+      "occupancy": 0.54,
+      "recommendedPrice": 8100,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-12",
+      "occupancy": 0.66,
+      "recommendedPrice": 11200,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-13",
+      "occupancy": 0.66,
+      "recommendedPrice": 11600,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-14",
+      "occupancy": 0.66,
+      "recommendedPrice": 10800,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-15",
+      "occupancy": 0.62,
+      "recommendedPrice": 8600,
+      "demandLevel": "low",
+      "event": {
+        "name": "Father's Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "occupancy": 0.54,
+      "recommendedPrice": 6900,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-17",
+      "occupancy": 0.54,
+      "recommendedPrice": 7300,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-18",
+      "occupancy": 0.54,
+      "recommendedPrice": 8100,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-19",
+      "occupancy": 0.66,
+      "recommendedPrice": 11200,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-20",
+      "occupancy": 0.66,
+      "recommendedPrice": 11600,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-21",
+      "occupancy": 0.66,
+      "recommendedPrice": 10800,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-22",
+      "occupancy": 0.54,
+      "recommendedPrice": 6900,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-23",
+      "occupancy": 0.54,
+      "recommendedPrice": 6900,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-24",
+      "occupancy": 0.54,
+      "recommendedPrice": 7300,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-25",
+      "occupancy": 0.54,
+      "recommendedPrice": 8100,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-26",
+      "occupancy": 0.66,
+      "recommendedPrice": 11200,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-27",
+      "occupancy": 0.73,
+      "recommendedPrice": 14200,
+      "demandLevel": "medium",
+      "event": {
+        "name": "End of Month Payday",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-28",
+      "occupancy": 0.78,
+      "recommendedPrice": 14600,
+      "demandLevel": "medium",
+      "event": {
+        "name": "Weekend Payday Surge",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-29",
+      "occupancy": 0.64,
+      "recommendedPrice": 8800,
+      "demandLevel": "low",
+      "event": {
+        "name": "Sunday Checkout Peak",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-30",
+      "occupancy": 0.54,
+      "recommendedPrice": 6900,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-07-01",
+      "occupancy": 0.6,
+      "recommendedPrice": 9000,
+      "demandLevel": "low",
+      "event": null
+    }
+  ],
+  "south-b": [
+    {
+      "date": "2026-06-02",
+      "occupancy": 0.65,
+      "recommendedPrice": 7400,
+      "demandLevel": "medium",
+      "event": {
+        "name": "Madaraka Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-03",
+      "occupancy": 0.52,
+      "recommendedPrice": 5700,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-04",
+      "occupancy": 0.52,
+      "recommendedPrice": 6300,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-05",
+      "occupancy": 0.64,
+      "recommendedPrice": 8700,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-06",
+      "occupancy": 0.64,
+      "recommendedPrice": 9000,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-07",
+      "occupancy": 0.64,
+      "recommendedPrice": 8400,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-08",
+      "occupancy": 0.52,
+      "recommendedPrice": 5400,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-09",
+      "occupancy": 0.52,
+      "recommendedPrice": 5400,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-10",
+      "occupancy": 0.52,
+      "recommendedPrice": 5700,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-11",
+      "occupancy": 0.52,
+      "recommendedPrice": 6300,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-12",
+      "occupancy": 0.64,
+      "recommendedPrice": 8700,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-13",
+      "occupancy": 0.64,
+      "recommendedPrice": 9000,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-14",
+      "occupancy": 0.64,
+      "recommendedPrice": 8400,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-15",
+      "occupancy": 0.6,
+      "recommendedPrice": 6700,
+      "demandLevel": "low",
+      "event": {
+        "name": "Father's Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "occupancy": 0.52,
+      "recommendedPrice": 5400,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-17",
+      "occupancy": 0.52,
+      "recommendedPrice": 5700,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-18",
+      "occupancy": 0.52,
+      "recommendedPrice": 6300,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-19",
+      "occupancy": 0.64,
+      "recommendedPrice": 8700,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-20",
+      "occupancy": 0.64,
+      "recommendedPrice": 9000,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-21",
+      "occupancy": 0.64,
+      "recommendedPrice": 8400,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-22",
+      "occupancy": 0.52,
+      "recommendedPrice": 5400,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-23",
+      "occupancy": 0.52,
+      "recommendedPrice": 5400,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-24",
+      "occupancy": 0.52,
+      "recommendedPrice": 5700,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-25",
+      "occupancy": 0.52,
+      "recommendedPrice": 6300,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-26",
+      "occupancy": 0.64,
+      "recommendedPrice": 8700,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-27",
+      "occupancy": 0.71,
+      "recommendedPrice": 11000,
+      "demandLevel": "medium",
+      "event": {
+        "name": "End of Month Payday",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-28",
+      "occupancy": 0.76,
+      "recommendedPrice": 11300,
+      "demandLevel": "medium",
+      "event": {
+        "name": "Weekend Payday Surge",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-29",
+      "occupancy": 0.62,
+      "recommendedPrice": 6900,
+      "demandLevel": "low",
+      "event": {
+        "name": "Sunday Checkout Peak",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-30",
+      "occupancy": 0.52,
+      "recommendedPrice": 5400,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-07-01",
+      "occupancy": 0.58,
+      "recommendedPrice": 7000,
+      "demandLevel": "low",
+      "event": null
+    }
+  ],
+  "south-c": [
+    {
+      "date": "2026-06-02",
+      "occupancy": 0.69,
+      "recommendedPrice": 10300,
+      "demandLevel": "medium",
+      "event": {
+        "name": "Madaraka Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-03",
+      "occupancy": 0.56,
+      "recommendedPrice": 7900,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-04",
+      "occupancy": 0.56,
+      "recommendedPrice": 8800,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-05",
+      "occupancy": 0.68,
+      "recommendedPrice": 12100,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-06",
+      "occupancy": 0.68,
+      "recommendedPrice": 12600,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-07",
+      "occupancy": 0.68,
+      "recommendedPrice": 11700,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-08",
+      "occupancy": 0.56,
+      "recommendedPrice": 7500,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-09",
+      "occupancy": 0.56,
+      "recommendedPrice": 7500,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-10",
+      "occupancy": 0.56,
+      "recommendedPrice": 7900,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-11",
+      "occupancy": 0.56,
+      "recommendedPrice": 8800,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-12",
+      "occupancy": 0.68,
+      "recommendedPrice": 12100,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-13",
+      "occupancy": 0.68,
+      "recommendedPrice": 12600,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-14",
+      "occupancy": 0.68,
+      "recommendedPrice": 11700,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-15",
+      "occupancy": 0.64,
+      "recommendedPrice": 9300,
+      "demandLevel": "low",
+      "event": {
+        "name": "Father's Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "occupancy": 0.56,
+      "recommendedPrice": 7500,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-17",
+      "occupancy": 0.56,
+      "recommendedPrice": 7900,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-18",
+      "occupancy": 0.56,
+      "recommendedPrice": 8800,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-19",
+      "occupancy": 0.68,
+      "recommendedPrice": 12100,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-20",
+      "occupancy": 0.68,
+      "recommendedPrice": 12600,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-21",
+      "occupancy": 0.68,
+      "recommendedPrice": 11700,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-22",
+      "occupancy": 0.56,
+      "recommendedPrice": 7500,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-23",
+      "occupancy": 0.56,
+      "recommendedPrice": 7500,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-24",
+      "occupancy": 0.56,
+      "recommendedPrice": 7900,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-25",
+      "occupancy": 0.56,
+      "recommendedPrice": 8800,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-26",
+      "occupancy": 0.68,
+      "recommendedPrice": 12100,
+      "demandLevel": "medium",
+      "event": null
+    },
+    {
+      "date": "2026-06-27",
+      "occupancy": 0.75,
+      "recommendedPrice": 15400,
+      "demandLevel": "medium",
+      "event": {
+        "name": "End of Month Payday",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-28",
+      "occupancy": 0.8,
+      "recommendedPrice": 15800,
+      "demandLevel": "medium",
+      "event": {
+        "name": "Weekend Payday Surge",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-29",
+      "occupancy": 0.66,
+      "recommendedPrice": 9600,
+      "demandLevel": "medium",
+      "event": {
+        "name": "Sunday Checkout Peak",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-30",
+      "occupancy": 0.56,
+      "recommendedPrice": 7500,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-07-01",
+      "occupancy": 0.62,
+      "recommendedPrice": 9800,
+      "demandLevel": "low",
+      "event": null
+    }
+  ],
+  "ngong-road": [
+    {
+      "date": "2026-06-02",
+      "occupancy": 0.44,
+      "recommendedPrice": 10200,
+      "demandLevel": "cold",
+      "event": {
+        "name": "Madaraka Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-03",
+      "occupancy": 0.35,
+      "recommendedPrice": 7800,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-04",
+      "occupancy": 0.35,
+      "recommendedPrice": 8700,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-05",
+      "occupancy": 0.43,
+      "recommendedPrice": 12000,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-06",
+      "occupancy": 0.43,
+      "recommendedPrice": 12400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-07",
+      "occupancy": 0.43,
+      "recommendedPrice": 11500,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-08",
+      "occupancy": 0.35,
+      "recommendedPrice": 7400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-09",
+      "occupancy": 0.35,
+      "recommendedPrice": 7400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-10",
+      "occupancy": 0.35,
+      "recommendedPrice": 7800,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-11",
+      "occupancy": 0.35,
+      "recommendedPrice": 8700,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-12",
+      "occupancy": 0.43,
+      "recommendedPrice": 12000,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-13",
+      "occupancy": 0.43,
+      "recommendedPrice": 12400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-14",
+      "occupancy": 0.43,
+      "recommendedPrice": 11500,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-15",
+      "occupancy": 0.39,
+      "recommendedPrice": 9200,
+      "demandLevel": "cold",
+      "event": {
+        "name": "Father's Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "occupancy": 0.35,
+      "recommendedPrice": 7400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-17",
+      "occupancy": 0.35,
+      "recommendedPrice": 7800,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-18",
+      "occupancy": 0.35,
+      "recommendedPrice": 8700,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-19",
+      "occupancy": 0.43,
+      "recommendedPrice": 12000,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-20",
+      "occupancy": 0.43,
+      "recommendedPrice": 12400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-21",
+      "occupancy": 0.43,
+      "recommendedPrice": 11500,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-22",
+      "occupancy": 0.35,
+      "recommendedPrice": 7400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-23",
+      "occupancy": 0.35,
+      "recommendedPrice": 7400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-24",
+      "occupancy": 0.35,
+      "recommendedPrice": 7800,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-25",
+      "occupancy": 0.35,
+      "recommendedPrice": 8700,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-26",
+      "occupancy": 0.43,
+      "recommendedPrice": 12000,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-27",
+      "occupancy": 0.5,
+      "recommendedPrice": 15200,
+      "demandLevel": "low",
+      "event": {
+        "name": "End of Month Payday",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-28",
+      "occupancy": 0.55,
+      "recommendedPrice": 15600,
+      "demandLevel": "low",
+      "event": {
+        "name": "Weekend Payday Surge",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-29",
+      "occupancy": 0.41,
+      "recommendedPrice": 9400,
+      "demandLevel": "cold",
+      "event": {
+        "name": "Sunday Checkout Peak",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-30",
+      "occupancy": 0.35,
+      "recommendedPrice": 7400,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-07-01",
+      "occupancy": 0.37,
+      "recommendedPrice": 9600,
+      "demandLevel": "cold",
+      "event": null
+    }
+  ],
+  "thika-road": [
+    {
+      "date": "2026-06-02",
+      "occupancy": 0.61,
+      "recommendedPrice": 10000,
+      "demandLevel": "low",
+      "event": {
+        "name": "Madaraka Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-03",
+      "occupancy": 0.48,
+      "recommendedPrice": 7600,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-04",
+      "occupancy": 0.48,
+      "recommendedPrice": 8500,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-05",
+      "occupancy": 0.6,
+      "recommendedPrice": 11700,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-06",
+      "occupancy": 0.6,
+      "recommendedPrice": 12200,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-07",
+      "occupancy": 0.6,
+      "recommendedPrice": 11300,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-08",
+      "occupancy": 0.48,
+      "recommendedPrice": 7200,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-09",
+      "occupancy": 0.48,
+      "recommendedPrice": 7200,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-10",
+      "occupancy": 0.48,
+      "recommendedPrice": 7600,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-11",
+      "occupancy": 0.48,
+      "recommendedPrice": 8500,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-12",
+      "occupancy": 0.6,
+      "recommendedPrice": 11700,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-13",
+      "occupancy": 0.6,
+      "recommendedPrice": 12200,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-14",
+      "occupancy": 0.6,
+      "recommendedPrice": 11300,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-15",
+      "occupancy": 0.56,
+      "recommendedPrice": 9000,
+      "demandLevel": "low",
+      "event": {
+        "name": "Father's Day Weekend",
+        "type": "holiday"
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "occupancy": 0.48,
+      "recommendedPrice": 7200,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-17",
+      "occupancy": 0.48,
+      "recommendedPrice": 7600,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-18",
+      "occupancy": 0.48,
+      "recommendedPrice": 8500,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-19",
+      "occupancy": 0.6,
+      "recommendedPrice": 11700,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-20",
+      "occupancy": 0.6,
+      "recommendedPrice": 12200,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-21",
+      "occupancy": 0.6,
+      "recommendedPrice": 11300,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-22",
+      "occupancy": 0.48,
+      "recommendedPrice": 7200,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-23",
+      "occupancy": 0.48,
+      "recommendedPrice": 7200,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-24",
+      "occupancy": 0.48,
+      "recommendedPrice": 7600,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-25",
+      "occupancy": 0.48,
+      "recommendedPrice": 8500,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-06-26",
+      "occupancy": 0.6,
+      "recommendedPrice": 11700,
+      "demandLevel": "low",
+      "event": null
+    },
+    {
+      "date": "2026-06-27",
+      "occupancy": 0.67,
+      "recommendedPrice": 14800,
+      "demandLevel": "medium",
+      "event": {
+        "name": "End of Month Payday",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-28",
+      "occupancy": 0.72,
+      "recommendedPrice": 15200,
+      "demandLevel": "medium",
+      "event": {
+        "name": "Weekend Payday Surge",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-29",
+      "occupancy": 0.58,
+      "recommendedPrice": 9200,
+      "demandLevel": "low",
+      "event": {
+        "name": "Sunday Checkout Peak",
+        "type": "event"
+      }
+    },
+    {
+      "date": "2026-06-30",
+      "occupancy": 0.48,
+      "recommendedPrice": 7200,
+      "demandLevel": "cold",
+      "event": null
+    },
+    {
+      "date": "2026-07-01",
+      "occupancy": 0.54,
+      "recommendedPrice": 9400,
+      "demandLevel": "low",
+      "event": null
+    }
   ]
 }

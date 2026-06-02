@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node scripts/build-datasets.mjs && vite build",
+    "build:data": "node scripts/build-datasets.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },

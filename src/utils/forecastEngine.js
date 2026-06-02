@@ -1,5 +1,6 @@
 import events from '../data/events.json';
 import { calculateOptimalPrice } from './priceEngine';
+import { getForecastBaseline } from './dataService';
 
 const DEMAND_LEVELS = ['cold', 'low', 'medium', 'high', 'peak'];
 
@@ -12,6 +13,9 @@ function occupancyToLevel(occupancy) {
 }
 
 function getDayOccupancy(base, dateStr, neighborhoodId) {
+  const baseline = getForecastBaseline(neighborhoodId, dateStr);
+  if (baseline?.occupancy != null) return baseline.occupancy;
+
   const day = new Date(dateStr + 'T12:00:00').getDay();
   const weekendBoost = day === 5 || day === 6 || day === 0 ? 0.12 : 0;
   const event = events.find(
@@ -33,9 +37,12 @@ export function generateForecast(property, neighborhood, startDate = new Date(),
     const d = new Date(startDate);
     d.setDate(d.getDate() + i);
     const dateStr = d.toISOString().split('T')[0];
-    const occupancy = getDayOccupancy(base, dateStr, neighborhoodId);
-    const recommendedPrice = calculateOptimalPrice(property, neighborhood, dateStr);
-    const demandLevel = occupancyToLevel(occupancy);
+    const baseline = getForecastBaseline(neighborhoodId, dateStr);
+    const occupancy = baseline?.occupancy ?? getDayOccupancy(base, dateStr, neighborhoodId);
+    const recommendedPrice =
+      baseline?.recommendedPrice ??
+      calculateOptimalPrice(property, neighborhood, dateStr);
+    const demandLevel = baseline?.demandLevel ?? occupancyToLevel(occupancy);
 
     const event = events.find(
       (e) =>
@@ -50,7 +57,7 @@ export function generateForecast(property, neighborhood, startDate = new Date(),
       demandLevel,
       event: event
         ? { name: event.name, type: event.type, icon: event.type === 'holiday' ? '🎉' : '🏃' }
-        : null,
+        : baseline?.event ?? null,
       reason: event
         ? `${event.name} — expect ${demandLevel} demand`
         : occupancy >= 0.8
@@ -72,18 +79,13 @@ export function generateForecast(property, neighborhood, startDate = new Date(),
 
 export function getDemandCellStyle(level) {
   const map = {
-    cold: { bg: 'var(--demand-1)', text: '#2d6a9f', level: 1 },
-    low: { bg: 'var(--demand-2)', text: '#2d6a9f', level: 2 },
-    medium: { bg: 'var(--demand-3)', text: '#9b6e1a', level: 3 },
-    high: { bg: 'var(--demand-4)', text: '#7a4f0a', level: 4 },
-    peak: { bg: 'var(--bg-inverse)', text: '#ffffff', level: 5 },
+    cold: { bg: 'var(--demand-cold)', text: '#a8c8e8', level: 1 },
+    low: { bg: 'var(--demand-low)', text: '#c8dff5', level: 2 },
+    medium: { bg: 'var(--demand-medium)', text: '#09090f', level: 3 },
+    high: { bg: 'var(--demand-high)', text: '#fff', level: 4 },
+    peak: { bg: 'var(--demand-peak)', text: '#fff', level: 5 },
   };
   return map[level] ?? map.medium;
-}
-
-/** @deprecated use getDemandCellStyle */
-export function getDemandColor(level) {
-  return getDemandCellStyle(level).bg;
 }
 
 export function getActionPrompts(forecast) {

@@ -46,8 +46,8 @@ export default function DemandCalendar() {
     <section id="calendar" className="card">
       <div className="flex flex-wrap justify-between items-start gap-4 mb-6">
         <div>
-          <h3 className="text-headline">30-Day Demand Forecast</h3>
-          <p className="text-meta mt-1">Tap any date for pricing recommendation</p>
+          <h3 className="text-headline">Your next 30 days</h3>
+          <p className="text-meta mt-1">Tap any day for insights</p>
         </div>
         <div className="flex gap-2">
           <button
