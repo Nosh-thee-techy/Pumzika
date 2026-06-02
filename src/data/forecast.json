@@ -1,0 +1,6 @@
+{
+  "kilimani": [
+    { "date": "2025-06-01", "occupancy": 0.91, "recommendedPrice": 9500, "demandLevel": "peak" },
+    { "date": "2025-06-02", "occupancy": 0.88, "recommendedPrice": 9200, "demandLevel": "high" }
+  ]
+}

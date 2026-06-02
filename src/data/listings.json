@@ -1,0 +1,10 @@
+[
+  { "id": "l1", "name": "Kilimani Garden Apt", "neighborhood": "kilimani", "bedrooms": "2 BR", "price": 7200, "status": "booked", "tier": 1 },
+  { "id": "l2", "name": "Yaya Centre Studio", "neighborhood": "kilimani", "bedrooms": "Studio", "price": 5500, "status": "available", "tier": 0 },
+  { "id": "l3", "name": "Wood Avenue 2BR", "neighborhood": "kilimani", "bedrooms": "2 BR", "price": 8200, "status": "booked", "tier": 2 },
+  { "id": "l4", "name": "State House Rd Villa", "neighborhood": "kilimani", "bedrooms": "3 BR", "price": 11500, "status": "available", "tier": 3 },
+  { "id": "l5", "name": "Argwings Kodhek Loft", "neighborhood": "kilimani", "bedrooms": "1 BR", "price": 6800, "status": "blocked", "tier": 1 },
+  { "id": "w1", "name": "Westlands Skyline", "neighborhood": "westlands", "bedrooms": "2 BR", "price": 9800, "status": "booked", "tier": 2 },
+  { "id": "w2", "name": "Ring Road Studio", "neighborhood": "westlands", "bedrooms": "Studio", "price": 6200, "status": "available", "tier": 1 },
+  { "id": "k1", "name": "Kileleshwa Heights", "neighborhood": "kileleshwa", "bedrooms": "2 BR", "price": 7900, "status": "booked", "tier": 2 }
+]

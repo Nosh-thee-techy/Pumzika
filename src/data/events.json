@@ -1,0 +1,13 @@
+[
+  { "date": "2026-06-01", "name": "Madaraka Day", "type": "holiday", "demandMultiplier": 1.45, "neighborhoods": ["all"] },
+  { "date": "2026-06-02", "name": "Madaraka Day Weekend", "type": "holiday", "demandMultiplier": 1.38, "neighborhoods": ["all"] },
+  { "date": "2026-06-08", "name": "Nairobi Marathon", "type": "event", "demandMultiplier": 1.6, "neighborhoods": ["kilimani", "westlands", "kileleshwa", "upperhill"] },
+  { "date": "2026-06-09", "name": "Post-Marathon Recovery", "type": "event", "demandMultiplier": 1.2, "neighborhoods": ["kilimani", "westlands"] },
+  { "date": "2026-06-14", "name": "Koroga Festival", "type": "event", "demandMultiplier": 1.35, "neighborhoods": ["westlands", "parklands", "kilimani"] },
+  { "date": "2026-06-15", "name": "Father's Day Weekend", "type": "holiday", "demandMultiplier": 1.25, "neighborhoods": ["all"] },
+  { "date": "2026-06-20", "name": "Tech Conference Week", "type": "event", "demandMultiplier": 1.3, "neighborhoods": ["westlands", "upperhill", "kilimani"] },
+  { "date": "2026-06-21", "name": "Tech Conference Weekend", "type": "event", "demandMultiplier": 1.4, "neighborhoods": ["westlands", "upperhill"] },
+  { "date": "2026-06-27", "name": "End of Month Payday", "type": "event", "demandMultiplier": 1.22, "neighborhoods": ["all"] },
+  { "date": "2026-06-28", "name": "Weekend Payday Surge", "type": "event", "demandMultiplier": 1.35, "neighborhoods": ["all"] },
+  { "date": "2026-06-29", "name": "Sunday Checkout Peak", "type": "event", "demandMultiplier": 1.28, "neighborhoods": ["all"] }
+]
