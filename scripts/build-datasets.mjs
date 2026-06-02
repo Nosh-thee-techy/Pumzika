@@ -288,50 +288,60 @@ const countyMarket = countiesIndex.map((c) => {
   };
 });
 
-// ─── Forecast from hotel seasonality + events ───────────────────────────────
-const DAY_MULT = { 0: 1.3, 1: 0.85, 2: 0.85, 3: 0.9, 4: 1.0, 5: 1.35, 6: 1.4 };
-const forecast = {};
-const start = new Date();
+// ─── Forecast (skip if ML model already exported) ────────────────────────────
+const modelMetricsPath = path.join(dataDir, 'model-metrics.json');
+const skipForecast = fs.existsSync(modelMetricsPath);
 
-for (const n of neighborhoods) {
-  forecast[n.id] = [];
-  for (let i = 0; i < 30; i++) {
-    const d = new Date(start);
-    d.setDate(d.getDate() + i);
-    const dateStr = d.toISOString().split('T')[0];
-    const day = d.getDay();
-    const monthName = MONTHS[d.getMonth()];
+if (skipForecast) {
+  console.log('  forecast.json: kept (ML model output — run npm run train:models to refresh)');
+} else {
+  const DAY_MULT = { 0: 1.3, 1: 0.85, 2: 0.85, 3: 0.9, 4: 1.0, 5: 1.35, 6: 1.4 };
+  const forecast = {};
+  const start = new Date();
 
-    const event = events.find(
-      (e) =>
-        e.date === dateStr &&
-        (e.neighborhoods.includes('all') || e.neighborhoods.includes(n.id))
-    );
+  for (const n of neighborhoods) {
+    forecast[n.id] = [];
+    for (let i = 0; i < 30; i++) {
+      const d = new Date(start);
+      d.setDate(d.getDate() + i);
+      const dateStr = d.toISOString().split('T')[0];
+      const day = d.getDay();
+      const monthName = MONTHS[d.getMonth()];
 
-    const monthFactor = monthDemandIndex[monthName] ?? 1;
-    const isWeekend = day === 5 || day === 6 || day === 0;
-    const occBoost = (monthFactor - 1) * 0.25 + (isWeekend ? weekendOccBoost : weekdayOccBoost);
-    const eventBoost = event ? (event.demandMultiplier - 1) * 0.35 : 0;
+      const event = events.find(
+        (e) =>
+          e.date === dateStr &&
+          (e.neighborhoods.includes('all') || e.neighborhoods.includes(n.id))
+      );
 
-    const occupancy = Math.min(
-      0.98,
-      Math.max(0.35, n.occupancyRate + occBoost + eventBoost)
-    );
+      const monthFactor = monthDemandIndex[monthName] ?? 1;
+      const isWeekend = day === 5 || day === 6 || day === 0;
+      const occBoost = (monthFactor - 1) * 0.25 + (isWeekend ? weekendOccBoost : weekdayOccBoost);
+      const eventBoost = event ? (event.demandMultiplier - 1) * 0.35 : 0;
 
-    const adrFactor = monthFactor * (isWeekend ? weekendAdrPremium : 1);
-    const eventMult = event?.demandMultiplier ?? 1;
-    const price = round100(
-      n.avgNightlyPrice * adrFactor * eventMult * (DAY_MULT[day] ?? 1)
-    );
+      const occupancy = Math.min(
+        0.98,
+        Math.max(0.35, n.occupancyRate + occBoost + eventBoost)
+      );
 
-    forecast[n.id].push({
-      date: dateStr,
-      occupancy: Math.round(occupancy * 100) / 100,
-      recommendedPrice: price,
-      demandLevel: occLevel(occupancy),
-      event: event ? { name: event.name, type: event.type } : null,
-    });
+      const adrFactor = monthFactor * (isWeekend ? weekendAdrPremium : 1);
+      const eventMult = event?.demandMultiplier ?? 1;
+      const price = round100(
+        n.avgNightlyPrice * adrFactor * eventMult * (DAY_MULT[day] ?? 1)
+      );
+
+      forecast[n.id].push({
+        date: dateStr,
+        occupancy: Math.round(occupancy * 100) / 100,
+        recommendedPrice: price,
+        demandLevel: occLevel(occupancy),
+        event: event ? { name: event.name, type: event.type } : null,
+      });
+    }
   }
+
+  fs.writeFileSync(path.join(dataDir, 'forecast.json'), JSON.stringify(forecast, null, 2));
+  console.log('forecast neighborhoods:', Object.keys(forecast).length);
 }
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -361,9 +371,7 @@ const dataSources = {
 fs.writeFileSync(path.join(dataDir, 'listings.json'), JSON.stringify(listings, null, 2));
 fs.writeFileSync(path.join(dataDir, 'neighborhoods.json'), JSON.stringify(neighborhoods, null, 2));
 fs.writeFileSync(path.join(dataDir, 'county-market.json'), JSON.stringify(countyMarket, null, 2));
-fs.writeFileSync(path.join(dataDir, 'forecast.json'), JSON.stringify(forecast, null, 2));
 fs.writeFileSync(path.join(dataDir, 'data-sources.json'), JSON.stringify(dataSources, null, 2));
 
 console.log('county-market:', countyMarket.length);
-console.log('forecast neighborhoods:', Object.keys(forecast).length);
 console.log('Done — datasets built from real CSVs');

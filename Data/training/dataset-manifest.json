@@ -1,0 +1,71 @@
+{
+  "exportedAt": "2026-06-02T18:07:20.768Z",
+  "purpose": "Training data for XGBoost (pricing) and Prophet (forecasting)",
+  "files": {
+    "listings-pricing.csv": {
+      "model": "XGBoost regression",
+      "target": "price_ksh",
+      "features": [
+        "neighborhood",
+        "bedrooms",
+        "property_type",
+        "occupancy_rate",
+        "rating",
+        "review_count",
+        "price_tier"
+      ],
+      "rows": 48211,
+      "description": "Historical listings with price + occupancy outcomes"
+    },
+    "occupancy-daily.csv": {
+      "model": "Facebook Prophet",
+      "target": "occupancy",
+      "timeColumn": "date",
+      "groupColumn": "neighborhood",
+      "rows": 11895,
+      "dateRange": {
+        "from": "2015-07-01",
+        "to": "2017-08-31"
+      },
+      "description": "Daily occupancy per neighborhood derived from booking dates"
+    }
+  },
+  "idealRealDataSchema": {
+    "listingsPricing": {
+      "required": [
+        "neighborhood",
+        "bedrooms",
+        "price_ksh",
+        "occupancy_rate"
+      ],
+      "optional": [
+        "property_type",
+        "rating",
+        "review_count",
+        "booking_date",
+        "amenities"
+      ]
+    },
+    "occupancyDaily": {
+      "required": [
+        "date",
+        "neighborhood",
+        "occupancy"
+      ],
+      "optional": [
+        "booking_count",
+        "adr_ksh"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "file": "Data/AB_NYC_2019.csv",
+      "usedFor": "listings-pricing.csv"
+    },
+    {
+      "file": "Data/hotel_bookings.csv",
+      "usedFor": "occupancy-daily.csv (booking dates)"
+    }
+  ]
+}

@@ -7,6 +7,9 @@
     "dev": "vite",
     "build": "node scripts/build-datasets.mjs && vite build",
     "build:data": "node scripts/build-datasets.mjs",
+    "export:training": "node scripts/export-training-data.mjs",
+    "train:models": "python notebooks/train_models.py",
+    "build:ml": "node scripts/export-training-data.mjs && python notebooks/train_models.py",
     "lint": "eslint .",
     "preview": "vite preview"
   },

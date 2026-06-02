@@ -1,0 +1,96 @@
+{
+  "trainedAt": "2026-06-02",
+  "pricing": {
+    "model": "XGBoost",
+    "task": "price_regression",
+    "mae_ksh": 2940,
+    "r2": 0.607,
+    "train_rows": 38568,
+    "test_rows": 9643
+  },
+  "forecasting": {
+    "model": "Facebook Prophet",
+    "horizonDays": 30,
+    "neighborhoods": 15,
+    "perNeighborhood": {
+      "gigiri": {
+        "prophet_used": false,
+        "fallback_used": true,
+        "history_days": 793
+      },
+      "karen": {
+        "prophet_used": false,
+        "fallback_used": true,
+        "history_days": 793
+      },
+      "kileleshwa": {
+        "prophet_used": false,
+        "fallback_used": true,
+        "history_days": 793
+      },
+      "kilimani": {
+        "prophet_used": false,
+        "fallback_used": true,
+        "history_days": 793
+      },
+      "langata": {
+        "prophet_used": false,
+        "fallback_used": true,
+        "history_days": 793
+      },
+      "lavington": {
+        "prophet_used": false,
+        "fallback_used": true,
+        "history_days": 793
+      },
+      "muthaiga": {
+        "prophet_used": false,
+        "fallback_used": true,
+        "history_days": 793
+      },
+      "ngong-road": {
+        "prophet_used": false,
+        "fallback_used": true,
+        "history_days": 793
+      },
+      "parklands": {
+        "prophet_used": false,
+        "fallback_used": true,
+        "history_days": 793
+      },
+      "runda": {
+        "prophet_used": false,
+        "fallback_used": true,
+        "history_days": 793
+      },
+      "south-b": {
+        "prophet_used": false,
+        "fallback_used": true,
+        "history_days": 793
+      },
+      "south-c": {
+        "prophet_used": false,
+        "fallback_used": true,
+        "history_days": 793
+      },
+      "thika-road": {
+        "prophet_used": false,
+        "fallback_used": true,
+        "history_days": 793
+      },
+      "upperhill": {
+        "prophet_used": false,
+        "fallback_used": true,
+        "history_days": 793
+      },
+      "westlands": {
+        "prophet_used": false,
+        "fallback_used": true,
+        "history_days": 793
+      }
+    }
+  },
+  "outputs": {
+    "forecast.json": "src\\data\\forecast.json"
+  }
+}
