@@ -11,33 +11,46 @@ export default function GuestDashboard() {
   const { guestListings } = useRole();
 
   return (
-    <div data-role="guest" className="flex flex-col flex-1 min-h-0 bg-[var(--bg-canvas)]">
-      <div className="flex-1 overflow-y-auto">
-        <div className="max-w-[960px] mx-auto px-5 py-8 lg:px-10 lg:py-10">
-          <TopBar askPath="/guest/explore" />
+    <div data-role="guest" className="dashboard-page">
+      <div className="dashboard-inner pb-24 lg:pb-8">
+        <TopBar askPath="/guest/explore" />
 
-          <div className="section-in mb-8"><PriceFairness /></div>
-          <div className="section-in mb-8"><DemandCalendar role="guest" /></div>
-          <div className="section-in mb-8"><GuestQuickStats /></div>
-          <div className="section-in mb-8"><NeighborhoodCards /></div>
+        <div className="dashboard-grid">
+          <div className="section-in">
+            <PriceFairness />
+          </div>
+
+          <div className="section-in">
+            <DemandCalendar role="guest" />
+          </div>
+
+          <div className="section-in">
+            <GuestQuickStats />
+          </div>
+
+          <div className="section-in">
+            <NeighborhoodCards />
+          </div>
 
           <section className="card section-in">
             <h3 className="text-headline">Listings in your budget</h3>
             <p className="text-meta mt-1">Tap a listing for full insights</p>
-            <div className="mt-4 divide-y divide-[var(--border-subtle)]">
+            <div className="mt-5 flex flex-col gap-2">
               {guestListings.slice(0, 8).map((l) => (
                 <button
                   key={l.id}
                   type="button"
                   onClick={() => navigate(`/guest/listing/${l.id}`)}
-                  className="w-full flex items-center justify-between py-3 text-left hover:bg-[var(--bg-raised)] px-2 rounded-lg transition-colors"
+                  className="w-full flex items-center justify-between gap-4 py-4 px-4 text-left rounded-2xl bg-[var(--bg-soft)] hover:bg-[var(--bg-raised)] transition-colors"
                 >
-                  <div>
-                    <p className="font-medium text-[13px]">{l.name.slice(0, 40)}</p>
-                    <p className="text-meta">{l.neighborhood} · {l.bedrooms}</p>
+                  <div className="min-w-0">
+                    <p className="font-semibold text-[14px] truncate">{l.name.slice(0, 40)}</p>
+                    <p className="text-meta mt-0.5">
+                      {l.neighborhood} · {l.bedrooms} BR
+                    </p>
                   </div>
-                  <div className="text-right">
-                    <p className="font-semibold">Ksh {l.price.toLocaleString()}</p>
+                  <div className="text-right shrink-0">
+                    <p className="font-bold">Ksh {l.price.toLocaleString()}</p>
                     <p className="text-meta">{l.rating} ★</p>
                   </div>
                 </button>

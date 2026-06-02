@@ -44,7 +44,7 @@ export default function DemandCalendar({ role = 'host' }) {
   let cellIndex = 0;
 
   return (
-    <section id="calendar" className="card">
+    <section id="calendar" className={isGuest ? 'card' : 'card-dark'}>
       <div className="flex flex-wrap justify-between items-start gap-4 mb-6">
         <div>
           <h3 className="text-headline">{isGuest ? 'Best Time to Book — Next 30 Days' : '30-Day Demand Forecast'}</h3>
@@ -90,7 +90,7 @@ export default function DemandCalendar({ role = 'host' }) {
             <button
               key={day.date}
               type="button"
-              className="calendar-cell aspect-square rounded-lg p-1 flex flex-col items-center justify-center border border-transparent transition-all duration-150 hover:shadow-[var(--shadow-raised)] hover:-translate-y-0.5 hover:border-[var(--border-strong)]"
+              className="calendar-cell aspect-square rounded-xl p-1 flex flex-col items-center justify-center border border-transparent transition-all duration-150 hover:shadow-[var(--shadow-raised)] hover:-translate-y-0.5"
               style={{
                 background: style.bg,
                 color: style.text,

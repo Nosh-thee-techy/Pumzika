@@ -2,117 +2,194 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useRole } from '../context/RoleContext';
 
+const HOST_FEATURES = [
+  { label: "Tonight's optimal price", hint: 'Live market signal' },
+  { label: '30-day demand forecast', hint: 'Prophet + seasonality' },
+  { label: 'Nairobi market intelligence', hint: '47 counties mapped' },
+];
+
+const GUEST_FEATURES = [
+  { label: 'Is this listing worth it?', hint: 'Fairness score' },
+  { label: 'Best time to book', hint: 'Demand calendar' },
+  { label: 'What guests really say', hint: 'Sentiment insights' },
+];
+
+function FeatureRow({ accent, label, hint }) {
+  return (
+    <li className="landing-feature">
+      <span className="landing-feature-dot" style={{ '--feature-accent': accent }} />
+      <span>
+        <span className="landing-feature-label">{label}</span>
+        <span className="landing-feature-hint">{hint}</span>
+      </span>
+    </li>
+  );
+}
+
+function PreviewCard({ role, accent, children }) {
+  return (
+    <div className="landing-preview" style={{ '--preview-accent': accent }} data-role={role}>
+      {children}
+    </div>
+  );
+}
+
 export default function Landing() {
   const navigate = useNavigate();
   const { selectRole } = useRole();
   const [transitioning, setTransitioning] = useState(null);
+  const [hovered, setHovered] = useState(null);
 
   const pickRole = (r) => {
     setTransitioning(r);
     selectRole(r);
     setTimeout(() => {
       navigate(r === 'host' ? '/host/onboarding' : '/guest/onboarding');
-    }, 400);
+    }, 450);
   };
 
+  const hostDimmed = hovered === 'guest' && !transitioning;
+  const guestDimmed = hovered === 'host' && !transitioning;
+
   return (
-    <div className="min-h-screen flex flex-col lg:flex-row relative overflow-hidden bg-[#141410]">
-      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 text-center pointer-events-none">
-        <div className="font-display italic text-[32px] text-[#F7F6F3]">pumzika</div>
-        <div className="text-[12px] tracking-[2px] text-[#A89E91] mt-1">Smart Rentals · Nairobi</div>
+    <div className="landing-page">
+      <div className="landing-bg" aria-hidden="true">
+        <div className="landing-orb landing-orb-host" />
+        <div className="landing-orb landing-orb-guest" />
+        <div className="landing-grid" />
       </div>
 
-      <div
-        className={`relative flex-1 flex flex-col justify-center p-12 lg:p-16 transition-all duration-400 ease-out section-in ${
-          transitioning === 'guest' ? 'opacity-0 w-0 overflow-hidden' : transitioning === 'host' ? 'lg:w-full w-full' : ''
-        }`}
-        style={{ animationDelay: '0s' }}
-        onMouseEnter={(e) => {
-          e.currentTarget.style.background = 'rgba(200,146,42,0.06)';
-        }}
-        onMouseLeave={(e) => {
-          e.currentTarget.style.background = 'transparent';
-        }}
-      >
-        <div className="max-w-md mx-auto lg:mx-0 lg:ml-auto lg:mr-16">
-          <p className="text-label tracking-[2px] text-[#C8922A]">For Hosts</p>
-          <h1 className="font-display text-4xl lg:text-5xl text-[#F7F6F3] leading-[1.1] mt-4">
-            Maximize every
-            <br />
-            night.
-          </h1>
-          <ul className="mt-6 space-y-2.5 text-[14px] text-[#A89E91]">
-            {["Tonight's optimal price", '30-day demand forecast', 'Nairobi market intelligence'].map(
-              (line) => (
-                <li key={line} className="flex items-center gap-2">
-                  <span className="text-[#C8922A]">✦</span>
-                  {line}
-                </li>
-              )
-            )}
-          </ul>
-          <button
-            type="button"
-            onClick={() => pickRole('host')}
-            className="mt-10 px-6 py-3 rounded-lg border text-[14px] font-medium transition-all duration-150"
-            style={{ borderColor: 'rgba(200,146,42,0.4)', color: '#C8922A' }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background = 'rgba(200,146,42,0.1)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background = 'transparent';
-            }}
-          >
-            I&apos;m a host →
-          </button>
+      <header className="landing-header section-in">
+        <div className="landing-brand">
+          <span className="landing-brand-mark">pumzika</span>
+          <span className="landing-brand-tag">Smart Rentals · Nairobi</span>
         </div>
-      </div>
+      </header>
 
-      <div className="hidden lg:block w-px bg-white/[0.08] shrink-0" />
+      <main className="landing-main">
+        <section
+          className={`landing-panel landing-panel-host section-in ${
+            transitioning === 'guest' ? 'landing-panel-exit' : transitioning === 'host' ? 'landing-panel-expand' : ''
+          } ${hostDimmed ? 'landing-panel-dim' : ''}`}
+          style={{ animationDelay: '0.05s' }}
+          onMouseEnter={() => setHovered('host')}
+          onMouseLeave={() => setHovered(null)}
+        >
+          <div className="landing-panel-inner">
+            <div className="landing-panel-copy">
+              <p className="landing-eyebrow landing-eyebrow-host">For Hosts</p>
+              <h1 className="landing-headline">
+                Maximize every
+                <br />
+                <em>night.</em>
+              </h1>
+              <p className="landing-lede">
+                Turn market data into nightly revenue — pricing, demand, and neighborhood intelligence in one place.
+              </p>
 
-      <div
-        className={`relative flex-1 flex flex-col justify-center p-12 lg:p-16 transition-all duration-400 ease-out section-in ${
-          transitioning === 'host' ? 'opacity-0 w-0 overflow-hidden' : transitioning === 'guest' ? 'lg:w-full w-full' : ''
-        }`}
-        style={{ animationDelay: '0.1s' }}
-        onMouseEnter={(e) => {
-          e.currentTarget.style.background = 'rgba(13,123,110,0.06)';
-        }}
-        onMouseLeave={(e) => {
-          e.currentTarget.style.background = 'transparent';
-        }}
-      >
-        <div className="max-w-md mx-auto lg:mx-0 lg:mr-auto lg:ml-16">
-          <p className="text-label tracking-[2px] text-[#0D7B6E]">For Guests</p>
-          <h1 className="font-display text-4xl lg:text-5xl text-[#F7F6F3] leading-[1.1] mt-4">
-            Find the right
-            <br />
-            place, priced right.
-          </h1>
-          <ul className="mt-6 space-y-2.5 text-[14px] text-[#A89E91]">
-            {['Is this listing worth it?', 'Best time to book', 'What guests really say'].map((line) => (
-              <li key={line} className="flex items-center gap-2">
-                <span className="text-[#0D7B6E]">✦</span>
-                {line}
-              </li>
-            ))}
-          </ul>
-          <button
-            type="button"
-            onClick={() => pickRole('guest')}
-            className="mt-10 px-6 py-3 rounded-lg border text-[14px] font-medium transition-all duration-150"
-            style={{ borderColor: 'rgba(13,123,110,0.4)', color: '#0D7B6E' }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background = 'rgba(13,123,110,0.1)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background = 'transparent';
-            }}
-          >
-            I&apos;m a guest →
-          </button>
+              <ul className="landing-features">
+                {HOST_FEATURES.map((f) => (
+                  <FeatureRow key={f.label} accent="#C8922A" {...f} />
+                ))}
+              </ul>
+
+              <button type="button" className="landing-cta landing-cta-host" onClick={() => pickRole('host')}>
+                <span>I&apos;m a host</span>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                  <path d="M3 9h12M10 4l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
+            </div>
+
+            <PreviewCard role="host" accent="#C8922A">
+              <p className="landing-preview-label">Tonight&apos;s signal</p>
+              <p className="landing-preview-value">Ksh 12,400</p>
+              <p className="landing-preview-meta">
+                <span className="landing-preview-up">↑ 8%</span> vs. your current rate
+              </p>
+              <div className="landing-preview-bars">
+                {[42, 68, 55, 82, 71, 94, 88].map((h, i) => (
+                  <span key={i} style={{ height: `${h}%` }} />
+                ))}
+              </div>
+              <p className="landing-preview-foot">Westlands · High demand week</p>
+            </PreviewCard>
+          </div>
+        </section>
+
+        <div className="landing-divider" aria-hidden="true">
+          <span className="landing-divider-line" />
+          <span className="landing-divider-dot" />
+          <span className="landing-divider-line" />
         </div>
-      </div>
+
+        <section
+          className={`landing-panel landing-panel-guest section-in ${
+            transitioning === 'host' ? 'landing-panel-exit' : transitioning === 'guest' ? 'landing-panel-expand' : ''
+          } ${guestDimmed ? 'landing-panel-dim' : ''}`}
+          style={{ animationDelay: '0.12s' }}
+          onMouseEnter={() => setHovered('guest')}
+          onMouseLeave={() => setHovered(null)}
+        >
+          <div className="landing-panel-inner landing-panel-inner-reverse">
+            <div className="landing-panel-copy">
+              <p className="landing-eyebrow landing-eyebrow-guest">For Guests</p>
+              <h1 className="landing-headline">
+                Find the right place,
+                <br />
+                <em>priced right.</em>
+              </h1>
+              <p className="landing-lede">
+                Know before you book — fairness scores, timing signals, and what other guests actually experienced.
+              </p>
+
+              <ul className="landing-features">
+                {GUEST_FEATURES.map((f) => (
+                  <FeatureRow key={f.label} accent="#0D7B6E" {...f} />
+                ))}
+              </ul>
+
+              <button type="button" className="landing-cta landing-cta-guest" onClick={() => pickRole('guest')}>
+                <span>I&apos;m a guest</span>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                  <path d="M3 9h12M10 4l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
+            </div>
+
+            <PreviewCard role="guest" accent="#0D7B6E">
+              <p className="landing-preview-label">Price fairness</p>
+              <div className="landing-fairness-ring">
+                <svg viewBox="0 0 80 80" aria-hidden="true">
+                  <circle cx="40" cy="40" r="34" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="6" />
+                  <circle
+                    cx="40"
+                    cy="40"
+                    r="34"
+                    fill="none"
+                    stroke="#0D7B6E"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                    strokeDasharray="160 54"
+                    transform="rotate(-90 40 40)"
+                  />
+                </svg>
+                <span className="landing-fairness-score">94</span>
+              </div>
+              <p className="landing-preview-meta landing-preview-fair">Great value for Kilimani</p>
+              <div className="landing-preview-tags">
+                <span>Walkable</span>
+                <span>Quiet</span>
+                <span>Safe area</span>
+              </div>
+            </PreviewCard>
+          </div>
+        </section>
+      </main>
+
+      <footer className="landing-footer section-in" style={{ animationDelay: '0.2s' }}>
+        <span>Powered by XGBoost · Prophet · Claude</span>
+      </footer>
     </div>
   );
 }

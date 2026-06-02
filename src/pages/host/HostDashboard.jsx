@@ -18,17 +18,39 @@ function QuickSettings() {
       <div className="mt-6 space-y-6">
         <label className="flex items-center justify-between text-sm">
           <span className="text-[var(--text-secondary)]">Smart pricing autopilot</span>
-          <button type="button" onClick={() => setSettings((s) => ({ ...s, autopilot: !s.autopilot }))} className={`w-11 h-6 rounded-full relative ${settings.autopilot ? 'bg-[var(--accent)]' : 'bg-[var(--bg-raised)] border border-[var(--border-medium)]'}`}>
-            <span className={`absolute top-1 w-4 h-4 rounded-full bg-white transition-all ${settings.autopilot ? 'left-6' : 'left-1'}`} />
+          <button
+            type="button"
+            onClick={() => setSettings((s) => ({ ...s, autopilot: !s.autopilot }))}
+            className={`w-12 h-7 rounded-full relative transition-colors ${settings.autopilot ? 'bg-[var(--accent)]' : 'bg-[var(--bg-raised)]'}`}
+          >
+            <span
+              className={`absolute top-1 w-5 h-5 rounded-full bg-white shadow transition-all ${settings.autopilot ? 'left-6' : 'left-1'}`}
+            />
           </button>
         </label>
         <div>
-          <label className="text-label block mb-2">Min price — Ksh {settings.minPrice.toLocaleString()}</label>
-          <input type="range" min={3000} max={15000} step={500} value={settings.minPrice} onChange={(e) => setSettings((s) => ({ ...s, minPrice: Number(e.target.value) }))} className="w-full accent-[var(--accent)]" />
+          <label className="text-label block mb-3">Min price — Ksh {settings.minPrice.toLocaleString()}</label>
+          <input
+            type="range"
+            min={3000}
+            max={15000}
+            step={500}
+            value={settings.minPrice}
+            onChange={(e) => setSettings((s) => ({ ...s, minPrice: Number(e.target.value) }))}
+            className="w-full accent-[var(--accent)]"
+          />
         </div>
         <div>
-          <label className="text-label block mb-2">Max price — Ksh {settings.maxPrice.toLocaleString()}</label>
-          <input type="range" min={3000} max={15000} step={500} value={settings.maxPrice} onChange={(e) => setSettings((s) => ({ ...s, maxPrice: Number(e.target.value) }))} className="w-full accent-[var(--accent)]" />
+          <label className="text-label block mb-3">Max price — Ksh {settings.maxPrice.toLocaleString()}</label>
+          <input
+            type="range"
+            min={3000}
+            max={15000}
+            step={500}
+            value={settings.maxPrice}
+            onChange={(e) => setSettings((s) => ({ ...s, maxPrice: Number(e.target.value) }))}
+            className="w-full accent-[var(--accent)]"
+          />
         </div>
       </div>
     </section>
@@ -36,28 +58,44 @@ function QuickSettings() {
 }
 
 export default function HostDashboard() {
-  const delays = ['0.05s', '0.12s', '0.18s', '0.24s', '0.3s', '0.36s', '0.42s'];
+  const delays = ['0.05s', '0.1s', '0.15s', '0.2s', '0.25s', '0.3s'];
 
   return (
-    <div data-role="host" className="flex flex-col flex-1 min-h-0 bg-[var(--bg-canvas)]">
-      <div className="flex-1 overflow-y-auto">
-        <div className="max-w-[960px] mx-auto px-5 py-8 lg:px-10 lg:py-10">
-          <TopBar askPath="/host/ask" />
+    <div data-role="host" className="dashboard-page">
+      <div className="dashboard-inner pb-24 lg:pb-8">
+        <TopBar askPath="/host/ask" />
 
-          <div className="section-in mb-8" style={{ animationDelay: delays[0] }}>
+        <div className="dashboard-grid">
+          <div className="section-in dashboard-bento-wide" style={{ animationDelay: delays[0] }}>
             <MoneyLeftBehind />
           </div>
 
-          <section className="card section-in grid lg:grid-cols-[1.2fr_1fr] gap-8" style={{ animationDelay: delays[1] }}>
+          <section className="card price-hero-card section-in dashboard-bento-wide" style={{ animationDelay: delays[1] }}>
             <PriceTicker />
+            <div className="price-hero-divider" aria-hidden="true" />
             <PriceReason />
           </section>
 
-          <div className="mt-8 section-in" style={{ animationDelay: delays[2] }}><QuickStats /></div>
-          <div className="mt-8 section-in" style={{ animationDelay: delays[3] }}><DemandCalendar role="host" /></div>
-          <div className="mt-8 section-in" style={{ animationDelay: delays[4] }}><NeighborhoodComps /></div>
-          <div className="mt-8 section-in" style={{ animationDelay: delays[5] }}><OccupancyChart /></div>
-          <div className="mt-8 section-in" style={{ animationDelay: delays[6] }}><QuickSettings /></div>
+          <div className="section-in dashboard-bento-wide" style={{ animationDelay: delays[2] }}>
+            <QuickStats />
+          </div>
+
+          <div className="section-in" style={{ animationDelay: delays[3] }}>
+            <DemandCalendar role="host" />
+          </div>
+
+          <div className="dashboard-bento">
+            <div className="section-in" style={{ animationDelay: delays[4] }}>
+              <OccupancyChart />
+            </div>
+            <div className="section-in" style={{ animationDelay: delays[4] }}>
+              <NeighborhoodComps />
+            </div>
+          </div>
+
+          <div className="section-in" style={{ animationDelay: delays[5] }}>
+            <QuickSettings />
+          </div>
         </div>
       </div>
     </div>

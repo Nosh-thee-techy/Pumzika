@@ -14,9 +14,9 @@ import ListingInsights from './pages/guest/ListingInsights';
 
 function AppLayout({ children }) {
   return (
-    <div className="flex min-h-screen pb-16 lg:pb-0">
+    <div className="app-shell">
       <Sidebar />
-      <main className="flex-1 flex flex-col min-w-0 min-h-0">{children}</main>
+      <main className="app-main">{children}</main>
       <MobileNav />
     </div>
   );

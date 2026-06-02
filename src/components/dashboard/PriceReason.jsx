@@ -1,24 +1,32 @@
 import { usePricing } from '../../hooks/usePricing';
 
-const ICONS = { '🗓️': '🗓', '🏘️': '🏘', '📈': '📈' };
+const SIGNAL_META = {
+  '🗓️': { label: 'Demand', glyph: '🗓' },
+  '🏘️': { label: 'Market', glyph: '🏘' },
+  '📈': { label: 'Occupancy', glyph: '📈' },
+};
 
 export default function PriceReason() {
   const { priceReasons } = usePricing();
 
   return (
-    <div>
-      <p className="text-label mb-4">Pricing signals</p>
-      <ul className="space-y-4">
-        {priceReasons.map((reason) => (
-          <li
-            key={reason.text}
-            className="pl-3 border-l-[3px] text-[13px] leading-relaxed"
-            style={{ borderColor: 'var(--accent)', color: 'var(--text-secondary)' }}
-          >
-            <span className="mr-2 opacity-60">{ICONS[reason.icon] ?? '·'}</span>
-            {reason.text}
-          </li>
-        ))}
+    <div className="price-signals">
+      <p className="text-label price-signals-heading">Pricing signals</p>
+      <ul className="price-signals-list">
+        {priceReasons.map((reason) => {
+          const meta = SIGNAL_META[reason.icon] ?? { label: 'Signal', glyph: '·' };
+          return (
+            <li key={reason.text} className="price-signal">
+              <div className="price-signal-icon" aria-hidden="true">
+                {meta.glyph}
+              </div>
+              <div className="price-signal-body">
+                <span className="price-signal-type">{meta.label}</span>
+                <p className="price-signal-text">{reason.text}</p>
+              </div>
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

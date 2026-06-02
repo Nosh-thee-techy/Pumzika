@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import { LayoutDashboard, Map, Mic, Compass } from 'lucide-react';
 import { useRole } from '../../context/RoleContext';
 
 export default function MobileNav() {
@@ -7,29 +8,25 @@ export default function MobileNav() {
 
   const items = isHost
     ? [
-        { to: '/host/dashboard', label: 'Home', end: true },
-        { to: '/host/map', label: 'Map' },
-        { to: '/host/ask', label: 'Ask AI' },
+        { to: '/host/dashboard', label: 'Home', icon: LayoutDashboard, end: true },
+        { to: '/host/map', label: 'Map', icon: Map },
+        { to: '/host/ask', label: 'Ask AI', icon: Mic },
       ]
     : [
-        { to: '/guest/dashboard', label: 'Home', end: true },
-        { to: '/guest/explore', label: 'Explore' },
+        { to: '/guest/dashboard', label: 'Home', icon: LayoutDashboard, end: true },
+        { to: '/guest/explore', label: 'Explore', icon: Compass },
       ];
 
   return (
-    <nav
-      className="lg:hidden fixed bottom-0 left-0 right-0 flex justify-around py-3 border-t z-50 bg-[var(--bg-surface)]"
-      style={{ borderColor: 'var(--border-subtle)', boxShadow: 'var(--shadow-raised)' }}
-    >
+    <nav className="mobile-nav-float">
       {items.map((item) => (
         <NavLink
           key={item.to}
           to={item.to}
           end={item.end}
-          className={({ isActive }) =>
-            `text-[11px] font-medium ${isActive ? 'text-[var(--accent-dark)]' : 'text-[var(--text-muted)]'}`
-          }
+          className={({ isActive }) => `mobile-nav-link${isActive ? ' active' : ''}`}
         >
+          <item.icon size={20} strokeWidth={1.75} />
           {item.label}
         </NavLink>
       ))}

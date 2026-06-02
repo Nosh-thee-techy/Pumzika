@@ -32,45 +32,49 @@ export default function PriceTicker() {
   }, [neighborhood, recommendedPrice]);
 
   return (
-    <div>
-      <div className="flex justify-between items-center mb-4">
+    <div className="price-ticker">
+      <div className="price-ticker-header">
         <span className="text-label">Recommended price · tonight</span>
         <span className="chip chip-accent">{confidence}% confidence</span>
       </div>
 
-      <p className="text-price">Ksh {displayPrice.toLocaleString()}</p>
+      <p className="price-ticker-amount">Ksh {displayPrice.toLocaleString()}</p>
 
-      <p
-        className="mt-3 text-sm font-medium"
-        style={{ color: isAboveCurrent ? 'var(--positive)' : 'var(--negative)' }}
+      <div
+        className="price-ticker-change"
+        style={{ '--change-color': isAboveCurrent ? 'var(--positive)' : 'var(--negative)' }}
       >
-        {isAboveCurrent ? '↑' : '↓'} Ksh {Math.abs(diff).toLocaleString()}{' '}
-        {isAboveCurrent ? 'above' : 'below'} your current price{' '}
-        <span className="font-normal">
-          {isAboveCurrent ? '+' : ''}
-          {changePercent}%
+        <span className="price-ticker-change-icon">{isAboveCurrent ? '↑' : '↓'}</span>
+        <span>
+          Ksh {Math.abs(diff).toLocaleString()} {isAboveCurrent ? 'above' : 'below'} your current price
+          <strong>
+            {' '}
+            {isAboveCurrent ? '+' : ''}
+            {changePercent}%
+          </strong>
         </span>
-      </p>
-
-      <hr className="divider" />
-
-      <p className="text-label mb-2">Price range tonight</p>
-      <div className="relative h-1.5 rounded-full bg-[var(--bg-raised)]">
-        <div
-          className="absolute inset-y-0 left-[20%] right-[20%] rounded-full"
-          style={{ background: 'var(--accent)', opacity: 0.35 }}
-        />
-        <div
-          className="absolute top-1/2 -translate-y-1/2 w-3.5 h-3.5 rounded-full bg-white border-2"
-          style={{ left: `${range.pct}%`, marginLeft: -7, borderColor: 'var(--accent)' }}
-        />
       </div>
-      <div className="flex justify-between mt-2 text-meta">
-        <span>Ksh {range.min.toLocaleString()} · Budget</span>
-        <span className="font-medium" style={{ color: 'var(--accent-dark)' }}>
-          Ksh {recommendedPrice.toLocaleString()} · You
-        </span>
-        <span>Ksh {range.max.toLocaleString()} · Premium</span>
+
+      <div className="price-ticker-range">
+        <p className="text-label price-ticker-range-label">Price range tonight</p>
+        <div className="price-ticker-track">
+          <div className="price-ticker-track-band" />
+          <div className="price-ticker-thumb" style={{ left: `${range.pct}%` }} />
+        </div>
+        <div className="price-ticker-range-labels">
+          <div>
+            <span className="price-ticker-range-value">Ksh {range.min.toLocaleString()}</span>
+            <span className="price-ticker-range-tier">Budget</span>
+          </div>
+          <div className="price-ticker-range-you">
+            <span className="price-ticker-range-value">Ksh {recommendedPrice.toLocaleString()}</span>
+            <span className="price-ticker-range-tier">You</span>
+          </div>
+          <div>
+            <span className="price-ticker-range-value">Ksh {range.max.toLocaleString()}</span>
+            <span className="price-ticker-range-tier">Premium</span>
+          </div>
+        </div>
       </div>
     </div>
   );
