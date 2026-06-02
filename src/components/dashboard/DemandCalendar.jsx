@@ -21,8 +21,9 @@ function toMondayStart(dateStr) {
   return d;
 }
 
-export default function DemandCalendar() {
+export default function DemandCalendar({ role = 'host' }) {
   const { forecast } = useForecast();
+  const isGuest = role === 'guest';
   const [selected, setSelected] = useState(null);
   const [monthOffset, setMonthOffset] = useState(0);
 
@@ -46,8 +47,10 @@ export default function DemandCalendar() {
     <section id="calendar" className="card">
       <div className="flex flex-wrap justify-between items-start gap-4 mb-6">
         <div>
-          <h3 className="text-headline">30-Day Demand Forecast</h3>
-          <p className="text-meta mt-1">Tap any date for pricing recommendation</p>
+          <h3 className="text-headline">{isGuest ? 'Best Time to Book — Next 30 Days' : '30-Day Demand Forecast'}</h3>
+          <p className="text-meta mt-1">
+            {isGuest ? 'Green = cheaper to book. Gold = prices rising.' : 'Tap any date for pricing recommendation'}
+          </p>
         </div>
         <div className="flex gap-2">
           <button
@@ -101,7 +104,11 @@ export default function DemandCalendar() {
                 {new Date(day.date + 'T12:00:00').getDate()}
               </span>
               <span className="text-[11px] opacity-80">
-                {(day.recommendedPrice / 1000).toFixed(1).replace('.0', '')}k
+                {isGuest
+                  ? day.demandLevel === 'peak' || day.demandLevel === 'high'
+                    ? 'Book now'
+                    : 'Great price'
+                  : `${(day.recommendedPrice / 1000).toFixed(1).replace('.0', '')}k`}
               </span>
               {day.event && (
                 <span
@@ -136,7 +143,7 @@ export default function DemandCalendar() {
           </p>
           <p className="text-body text-[13px] mt-2">{selected.reason}</p>
           <button type="button" className="btn-primary mt-4 text-sm py-2">
-            Set this price
+            {isGuest ? 'Save this date' : 'Set this price'}
           </button>
         </div>
       )}
@@ -155,7 +162,7 @@ export default function DemandCalendar() {
         })}
       </div>
 
-      <ActionPrompts />
+      {!isGuest && <ActionPrompts />}
     </section>
   );
 }

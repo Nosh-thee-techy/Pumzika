@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="260" viewBox="0 0 1100 260" fill="none">
+  <rect width="1100" height="260" fill="#F7F6F3"/>
+  <text x="550" y="36" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="#141410">Offline ML Pipeline</text>
+
+  <!-- Step 1 -->
+  <rect x="40" y="70" width="180" height="140" rx="12" fill="#FFFFFF" stroke="#E8E4DC"/>
+  <text x="130" y="100" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#141410">Raw CSVs</text>
+  <text x="130" y="125" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6B6459">AB_NYC_2019.csv</text>
+  <text x="130" y="145" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6B6459">hotel_bookings.csv</text>
+
+  <path d="M230 140 L270 140" stroke="#C8922A" stroke-width="2"/>
+  <path d="M262 132 L278 140 L262 148" fill="#C8922A"/>
+
+  <!-- Step 2 -->
+  <rect x="280" y="70" width="180" height="140" rx="12" fill="#FFFFFF" stroke="#E8E4DC"/>
+  <text x="370" y="100" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#141410">Training CSVs</text>
+  <text x="370" y="125" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6B6459">listings-pricing.csv</text>
+  <text x="370" y="145" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6B6459">occupancy-daily.csv</text>
+
+  <path d="M470 140 L510 140" stroke="#C8922A" stroke-width="2"/>
+  <path d="M502 132 L518 140 L502 148" fill="#C8922A"/>
+
+  <!-- Step 3 -->
+  <rect x="520" y="70" width="180" height="140" rx="12" fill="#141410"/>
+  <text x="610" y="100" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#F7F6F3">Python Notebook</text>
+  <text x="610" y="125" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#A89E91">XGBoost pricing</text>
+  <text x="610" y="145" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#A89E91">Prophet forecast</text>
+
+  <path d="M710 140 L750 140" stroke="#C8922A" stroke-width="2"/>
+  <path d="M742 132 L758 140 L742 148" fill="#C8922A"/>
+
+  <!-- Step 4 -->
+  <rect x="760" y="70" width="140" height="140" rx="12" fill="#FFFFFF" stroke="#E8E4DC"/>
+  <text x="830" y="100" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#141410">JSON</text>
+  <text x="830" y="125" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6B6459">forecast.json</text>
+  <text x="830" y="145" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6B6459">model-metrics</text>
+
+  <path d="M910 140 L950 140" stroke="#C8922A" stroke-width="2"/>
+  <path d="M942 132 L958 140 L942 148" fill="#C8922A"/>
+
+  <!-- Step 5 -->
+  <rect x="960" y="70" width="100" height="140" rx="12" fill="#C8922A"/>
+  <text x="1010" y="120" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">React</text>
+  <text x="1010" y="145" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#FFFFFF">Dashboard</text>
+
+  <text x="550" y="240" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#6B6459">Train once offline. Dashboard reads baked predictions  no live model calls.</text>
+</svg>

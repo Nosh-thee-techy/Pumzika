@@ -29,6 +29,28 @@ export function getListingsForNeighborhood(neighborhoodId, bedroomFilter) {
   return rows.sort((a, b) => a.price - b.price);
 }
 
+export function getListingById(id) {
+  return listings.find((l) => l.id === id) ?? null;
+}
+
+const NEIGHBORHOOD_VIBES = {
+  westlands: ['lively', 'restaurants', 'social'],
+  kilimani: ['lively', 'restaurants', 'social'],
+  karen: ['quiet', 'family'],
+  lavington: ['quiet', 'family'],
+  langata: ['quiet', 'family'],
+  gigiri: ['business', 'quiet'],
+  parklands: ['lively', 'restaurants'],
+  upperhill: ['business'],
+  kileleshwa: ['lively', 'social'],
+  runda: ['quiet', 'family'],
+  muthaiga: ['quiet', 'family'],
+  'south-b': ['lively', 'social'],
+  'south-c': ['lively'],
+  'ngong-road': ['lively', 'restaurants'],
+  'thika-road': ['business'],
+};
+
 export function getComparablePrice(neighborhoodId, bedrooms) {
   const rows = getListingsForNeighborhood(neighborhoodId, bedrooms);
   if (!rows.length) {
@@ -53,6 +75,9 @@ export function enrichNeighborhood(raw) {
     avgRating: Math.round((ratings.reduce((a, b) => a + b, 0) / ratings.length) * 10) / 10,
     minPrice: Math.min(...prices),
     maxPrice: Math.max(...prices),
+    vibes: NEIGHBORHOOD_VIBES[n.id] ?? ['lively'],
+    guestRating: n.avgRating ?? 4.5,
+    negativeThemes: ['noise weekends', 'parking'],
   };
 }
 

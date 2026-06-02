@@ -1,4 +1,4 @@
-import { useProperty } from '../context/PropertyContext';
+import { useProperty } from '../context/RoleContext';
 import { getDemandCellStyle } from '../utils/forecastEngine';
 
 export function useForecast() {

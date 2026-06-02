@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { useProperty } from '../context/PropertyContext';
+import { useProperty } from '../context/RoleContext';
 import { getPriceChangePercent } from '../utils/priceEngine';
 
 export function usePricing() {

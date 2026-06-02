@@ -109,3 +109,12 @@ export function getConfidence(property, neighborhood) {
   if (neighborhood?.avgRating >= 4.5) score += 4;
   return Math.min(95, score);
 }
+
+export function calculateMoneyLeftBehind(property, neighborhood) {
+  if (!property?.currentPrice || !neighborhood) return 0;
+  const today = new Date().toISOString().split('T')[0];
+  const recommended = calculateOptimalPrice(property, neighborhood, today);
+  const dailyGap = Math.max(0, recommended - property.currentPrice);
+  const estimatedBookingDays = Math.round((neighborhood.occupancyRate ?? 0.65) * 7);
+  return Math.round((dailyGap * estimatedBookingDays) / 100) * 100;
+}

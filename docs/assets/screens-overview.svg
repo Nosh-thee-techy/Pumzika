@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="520" viewBox="0 0 1100 520" fill="none">
+  <rect width="1100" height="520" fill="#F7F6F3"/>
+
+  <!-- Dashboard panel -->
+  <rect x="40" y="40" width="500" height="440" rx="16" fill="#FFFFFF" stroke="#E8E4DC"/>
+  <rect x="40" y="40" width="500" height="36" rx="16" fill="#141410"/>
+  <text x="290" y="64" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#F7F6F3">Dashboard  Pricing &amp; Forecast</text>
+
+  <rect x="60" y="90" width="140" height="360" rx="8" fill="#141410"/>
+  <rect x="75" y="110" width="80" height="8" rx="4" fill="#C8922A"/>
+  <rect x="75" y="140" width="60" height="6" rx="3" fill="#3D3D38"/>
+  <rect x="75" y="160" width="60" height="6" rx="3" fill="#3D3D38"/>
+  <rect x="75" y="180" width="60" height="6" rx="3" fill="#3D3D38"/>
+
+  <text x="220" y="120" font-family="Georgia, serif" font-size="36" fill="#141410">Ksh 12,400</text>
+  <rect x="220" y="135" width="70" height="20" rx="10" fill="#EAF7F1"/>
+  <text x="255" y="149" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#1A7F5A">82% conf</text>
+
+  <rect x="220" y="170" width="300" height="60" rx="8" fill="#F7F6F3"/>
+  <rect x="235" y="185" width="120" height="6" rx="3" fill="#E8E4DC"/>
+  <rect x="235" y="200" width="200" height="6" rx="3" fill="#E8E4DC"/>
+  <rect x="235" y="215" width="160" height="6" rx="3" fill="#E8E4DC"/>
+
+  <!-- Calendar heatmap -->
+  <text x="220" y="260" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#6B6459">30-DAY DEMAND</text>
+  <g transform="translate(220, 270)">
+    <rect width="28" height="28" rx="4" fill="#E8F4FD"/>
+    <rect x="32" width="28" height="28" rx="4" fill="#BAD9F5"/>
+    <rect x="64" width="28" height="28" rx="4" fill="#F5E6C8"/>
+    <rect x="96" width="28" height="28" rx="4" fill="#EDB96A"/>
+    <rect x="128" width="28" height="28" rx="4" fill="#141410"/>
+    <rect x="160" width="28" height="28" rx="4" fill="#F5E6C8"/>
+    <rect x="192" width="28" height="28" rx="4" fill="#BAD9F5"/>
+    <rect x="224" width="28" height="28" rx="4" fill="#E8F4FD"/>
+    <rect y="32" width="28" height="28" rx="4" fill="#BAD9F5"/>
+    <rect x="32" y="32" width="28" height="28" rx="4" fill="#F5E6C8"/>
+    <rect x="64" y="32" width="28" height="28" rx="4" fill="#EDB96A"/>
+    <rect x="96" y="32" width="28" height="28" rx="4" fill="#F5E6C8"/>
+    <rect x="128" y="32" width="28" height="28" rx="4" fill="#BAD9F5"/>
+    <rect x="160" y="32" width="28" height="28" rx="4" fill="#E8F4FD"/>
+    <rect x="192" y="32" width="28" height="28" rx="4" fill="#E8F4FD"/>
+    <rect x="224" y="32" width="28" height="28" rx="4" fill="#BAD9F5"/>
+  </g>
+
+  <!-- Comps table -->
+  <rect x="220" y="380" width="300" height="60" rx="8" fill="#F7F6F3" stroke="#E8E4DC"/>
+  <text x="235" y="400" font-family="system-ui, sans-serif" font-size="10" fill="#A89E91">LISTING</text>
+  <text x="350" y="400" font-family="system-ui, sans-serif" font-size="10" fill="#A89E91">BEDS</text>
+  <text x="420" y="400" font-family="system-ui, sans-serif" font-size="10" fill="#A89E91">PRICE</text>
+  <text x="235" y="420" font-family="system-ui, sans-serif" font-size="11" fill="#141410">Kilimani Studio</text>
+  <text x="350" y="420" font-family="system-ui, sans-serif" font-size="11" fill="#141410">1 BR</text>
+  <text x="420" y="420" font-family="system-ui, sans-serif" font-size="11" fill="#141410">Ksh 9,800</text>
+
+  <!-- Map panel -->
+  <rect x="560" y="40" width="500" height="210" rx="16" fill="#FFFFFF" stroke="#E8E4DC"/>
+  <rect x="560" y="40" width="500" height="36" rx="16" fill="#141410"/>
+  <text x="810" y="64" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#F7F6F3">Kenya Map  County Drill-down</text>
+  <path d="M620 180 L680 120 L760 150 L820 100 L900 130 L950 170 L920 210 L780 220 L680 200 Z" fill="#F0EEE9" stroke="#D4CFC6"/>
+  <rect x="720" y="140" width="16" height="40" rx="2" fill="#C8922A" opacity="0.8"/>
+  <rect x="760" y="155" width="16" height="55" rx="2" fill="#EDB96A"/>
+  <rect x="800" y="165" width="16" height="35" rx="2" fill="#BAD9F5"/>
+  <text x="810" y="230" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#6B6459">Kenya ’ County ’ Neighborhood</text>
+
+  <!-- Voice panel -->
+  <rect x="560" y="270" width="500" height="210" rx="16" fill="#FFFFFF" stroke="#E8E4DC"/>
+  <rect x="560" y="270" width="500" height="36" rx="16" fill="#141410"/>
+  <text x="810" y="294" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#F7F6F3">Ask Pumzika  Voice AI</text>
+  <circle cx="810" cy="380" r="40" fill="#FDF3E0" stroke="#C8922A" stroke-width="2"/>
+  <circle cx="810" cy="380" r="24" fill="#C8922A"/>
+  <text x="660" y="450" font-family="system-ui, sans-serif" font-size="12" fill="#6B6459">&quot;Should I lower my price this weekend?&quot;</text>
+  <rect x="660" y="460" width="300" height="8" rx="4" fill="#F0EEE9"/>
+</svg>
