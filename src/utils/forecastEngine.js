@@ -79,11 +79,11 @@ export function generateForecast(property, neighborhood, startDate = new Date(),
 
 export function getDemandCellStyle(level) {
   const map = {
-    cold: { bg: 'var(--demand-cold)', text: '#a8c8e8', level: 1 },
-    low: { bg: 'var(--demand-low)', text: '#c8dff5', level: 2 },
-    medium: { bg: 'var(--demand-medium)', text: '#09090f', level: 3 },
-    high: { bg: 'var(--demand-high)', text: '#fff', level: 4 },
-    peak: { bg: 'var(--demand-peak)', text: '#fff', level: 5 },
+    cold: { bg: 'var(--demand-1)', text: '#2d6a9f', level: 1 },
+    low: { bg: 'var(--demand-2)', text: '#2d6a9f', level: 2 },
+    medium: { bg: 'var(--demand-3)', text: '#9b6e1a', level: 3 },
+    high: { bg: 'var(--demand-4)', text: '#7a4f0a', level: 4 },
+    peak: { bg: 'var(--demand-5)', text: '#ffffff', level: 5 },
   };
   return map[level] ?? map.medium;
 }

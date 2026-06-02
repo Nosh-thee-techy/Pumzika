@@ -1,10 +1,9 @@
-import { motion } from 'framer-motion';
 import { useForecast } from '../../hooks/useForecast';
 
 const STYLES = {
-  urgent: { border: 'var(--negative)', label: '🔴 Urgent', color: 'var(--negative)' },
-  week: { border: 'var(--accent)', label: '🟡 This week', color: 'var(--accent)' },
-  plan: { border: 'var(--positive)', label: '🟢 Plan ahead', color: 'var(--positive)' },
+  urgent: { border: 'var(--negative)', label: 'Urgent', color: 'var(--negative)' },
+  week: { border: 'var(--accent)', label: 'This week', color: 'var(--accent-dark)' },
+  plan: { border: 'var(--positive)', label: 'Plan ahead', color: 'var(--positive)' },
 };
 
 export default function ActionPrompts() {
@@ -12,17 +11,14 @@ export default function ActionPrompts() {
 
   return (
     <div className="grid md:grid-cols-3 gap-4 mt-6">
-      {actionPrompts.map((prompt, i) => {
+      {actionPrompts.map((prompt) => {
         const s = STYLES[prompt.urgency] ?? STYLES.plan;
         return (
-          <motion.div
+          <div
             key={prompt.text}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 + i * 0.1, duration: 0.35 }}
-            className="p-4 rounded-xl border"
+            className="p-4 rounded-lg border"
             style={{
-              background: 'var(--color-bg-tertiary)',
+              background: 'var(--bg-raised)',
               borderColor: 'var(--border-subtle)',
               borderLeftWidth: 3,
               borderLeftColor: s.border,
@@ -34,7 +30,7 @@ export default function ActionPrompts() {
             <p className="text-[13px] mt-2 leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
               {prompt.text}
             </p>
-          </motion.div>
+          </div>
         );
       })}
     </div>

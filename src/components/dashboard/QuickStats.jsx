@@ -6,32 +6,51 @@ export default function QuickStats() {
   const demandScore = neighborhood?.demandScore ?? 75;
   const demandLevel =
     demandScore >= 85 ? 'Peak' : demandScore >= 75 ? 'High' : demandScore >= 60 ? 'Medium' : 'Low';
+  const demandColor =
+    demandLevel === 'Peak'
+      ? 'var(--accent)'
+      : demandLevel === 'High'
+        ? 'var(--positive)'
+        : demandLevel === 'Low'
+          ? 'var(--negative)'
+          : 'var(--text-primary)';
 
-  const pills = [
-    { icon: '🔥', label: 'Demand level', value: demandLevel, accent: true },
-    { icon: '🏘️', label: 'Competing listings', value: `${neighborhood?.activeListings ?? 23} nearby` },
-    { icon: '📊', label: 'Your avg rating', value: `${neighborhood?.avgRating ?? 4.7} ★` },
+  const cards = [
+    {
+      label: 'Demand level',
+      value: demandLevel,
+      context: 'Peak period ahead',
+      color: demandColor,
+    },
+    {
+      label: 'Nearby listings',
+      value: String(neighborhood?.activeListings ?? 23),
+      context: 'Active tonight',
+    },
+    {
+      label: 'Area occupancy',
+      value: `${Math.round((neighborhood?.occupancyRate ?? 0.74) * 100)}%`,
+      context: 'Above 65% avg',
+    },
+    {
+      label: 'Your rating',
+      value: `${neighborhood?.avgRating ?? 4.7}★`,
+      context: `Top 15% in ${neighborhood?.name ?? 'Kilimani'}`,
+    },
   ];
 
   return (
-    <div className="flex flex-wrap gap-3">
-      {pills.map((pill) => (
-        <div
-          key={pill.label}
-          className="flex items-center gap-2 px-4 py-2.5 rounded-full border"
-          style={{
-            background: 'var(--color-bg-tertiary)',
-            borderColor: 'var(--border-subtle)',
-          }}
-        >
-          <span>{pill.icon}</span>
-          <span className="text-meta">{pill.label}:</span>
-          <span
-            className="text-sm font-semibold font-display"
-            style={{ color: pill.accent ? 'var(--accent)' : 'var(--text-primary)' }}
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      {cards.map((card) => (
+        <div key={card.label} className="card card-hover p-5">
+          <p className="text-label">{card.label}</p>
+          <p
+            className="text-2xl font-semibold mt-2 tracking-tight"
+            style={{ color: card.color ?? 'var(--text-primary)' }}
           >
-            {pill.value}
-          </span>
+            {card.value}
+          </p>
+          <p className="text-meta mt-1">{card.context}</p>
         </div>
       ))}
     </div>

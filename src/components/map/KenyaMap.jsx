@@ -1,5 +1,4 @@
 import { useState, useMemo, useCallback, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import Map, { NavigationControl } from 'react-map-gl/mapbox';
 import { DeckGL } from '@deck.gl/react';
 import { GeoJsonLayer, ColumnLayer, TextLayer } from '@deck.gl/layers';
@@ -27,11 +26,10 @@ const COLOR_RANGE = [
 ];
 
 const LEGEND = [
-  { label: 'Low', color: '#1e3a5f' },
-  { label: 'Medium', color: '#2d6a9f' },
-  { label: 'Rising', color: '#f5a623' },
-  { label: 'High', color: '#ff6b35' },
-  { label: 'Peak', color: '#ff2d55' },
+  { label: 'Low', color: '#e8f4fd' },
+  { label: 'Medium', color: '#f5e6c8' },
+  { label: 'High', color: '#edb96a' },
+  { label: 'Peak', color: '#c8922a' },
 ];
 
 function demandToColor(score) {
@@ -306,7 +304,7 @@ export default function KenyaMap({ fullScreen = false }) {
     return (
       <div
         className={`flex flex-col p-4 ${fullScreen ? 'h-full min-h-[400px]' : 'min-h-[200px] rounded-xl'}`}
-        style={{ background: 'var(--color-bg-tertiary)' }}
+        style={{ background: 'var(--bg-raised)' }}
       >
         <p className="text-body text-sm mb-3">
           Add <code style={{ color: 'var(--accent)' }}>VITE_MAPBOX_TOKEN</code> for the Kenya map
@@ -337,7 +335,7 @@ export default function KenyaMap({ fullScreen = false }) {
       {fullScreen && (
         <div
           className="absolute top-4 left-4 z-10 flex flex-wrap items-center gap-1 px-3 py-2 rounded-xl border text-xs"
-          style={{ background: 'var(--color-bg-secondary)', borderColor: 'var(--border-subtle)' }}
+          style={{ background: 'var(--bg-surface)', borderColor: 'var(--border-subtle)', boxShadow: 'var(--shadow-raised)' }}
         >
           <button type="button" onClick={goKenya} className="hover:text-[var(--accent)] transition-colors">
             Kenya
@@ -362,7 +360,7 @@ export default function KenyaMap({ fullScreen = false }) {
       {fullScreen && (
         <div
           className="absolute top-4 right-4 z-10 w-[200px] p-3 rounded-xl border"
-          style={{ background: 'var(--color-bg-secondary)', borderColor: 'var(--border-subtle)' }}
+          style={{ background: 'var(--bg-surface)', borderColor: 'var(--border-subtle)', boxShadow: 'var(--shadow-raised)' }}
         >
           <p className="text-label mb-2">Data layer</p>
           {['demand', 'supply', 'price'].map((m) => (
@@ -373,7 +371,7 @@ export default function KenyaMap({ fullScreen = false }) {
               className="block w-full text-left px-2 py-1.5 rounded-lg text-xs mb-1 capitalize"
               style={
                 viewMode === m
-                  ? { background: 'var(--accent)', color: '#09090f' }
+                  ? { background: 'var(--accent)', color: '#fff' }
                   : { color: 'var(--text-muted)' }
               }
             >
@@ -389,7 +387,7 @@ export default function KenyaMap({ fullScreen = false }) {
       {fullScreen && (
         <div
           className="absolute bottom-6 left-6 z-10 p-3 rounded-xl border"
-          style={{ background: 'var(--color-bg-secondary)', borderColor: 'var(--border-subtle)' }}
+          style={{ background: 'var(--bg-surface)', borderColor: 'var(--border-subtle)', boxShadow: 'var(--shadow-raised)' }}
         >
           <p className="text-label mb-2">Demand</p>
           <div className="flex gap-1">
@@ -422,75 +420,105 @@ export default function KenyaMap({ fullScreen = false }) {
           className="absolute z-10 pointer-events-none"
           style={{ left: '50%', top: '40%', transform: 'translate(-50%, -50%)' }}
         >
-          <div className="w-4 h-4 rounded-full host-pin-pulse border-2 mx-auto" style={{ background: 'var(--accent)', borderColor: 'rgba(245,166,35,0.5)' }} />
+          <div
+            className="w-3 h-3 rounded-full border-2 mx-auto"
+            style={{ background: 'var(--accent)', borderColor: '#fff' }}
+          />
           {!fullScreen && (
-            <span className="text-[10px] mt-1 block text-center px-2 py-0.5 rounded-full" style={{ background: 'var(--color-bg-secondary)', color: 'var(--accent)' }}>
-              {property?.name ?? 'Your listing'}
-            </span>
+            <div
+              className="mt-2 px-2 py-1 rounded-lg text-[11px] whitespace-nowrap"
+              style={{
+                background: 'var(--bg-surface)',
+                boxShadow: 'var(--shadow-float)',
+                color: 'var(--text-primary)',
+              }}
+            >
+              Your listing · Ksh {recommendedPrice.toLocaleString()} tonight
+            </div>
           )}
         </div>
       )}
 
-      <AnimatePresence>
-        {fullScreen && panelItem && (
-          <motion.aside
-            initial={{ x: 300 }}
-            animate={{ x: 0 }}
-            exit={{ x: 300 }}
-            className="absolute top-0 right-0 h-full w-[280px] z-20 overflow-y-auto border-l p-5"
-            style={{ background: 'var(--color-bg-secondary)', borderColor: 'var(--border-subtle)' }}
+      {fullScreen && panelItem && (
+          <aside
+            className="absolute top-0 right-0 h-full w-[300px] z-20 overflow-y-auto border-l p-8"
+            style={{
+              background: 'var(--bg-surface)',
+              borderColor: 'var(--border-subtle)',
+              boxShadow: '-8px 0 24px rgba(0,0,0,0.06)',
+            }}
           >
-            <button type="button" className="absolute top-4 right-4 text-lg" onClick={() => { setSelectedArea(null); if (level === 'area') goCounty(); else goKenya(); }}>×</button>
+            <button
+              type="button"
+              className="absolute top-6 right-6 text-meta"
+              onClick={() => {
+                setSelectedArea(null);
+                if (level === 'area') goCounty();
+                else goKenya();
+              }}
+            >
+              ×
+            </button>
             <p className="text-label">{selectedArea ? 'Area' : 'County'}</p>
-            <h2 className="font-display text-xl font-bold pr-6">{panelItem.name}</h2>
+            <h2 className="text-[22px] font-semibold pr-8">{panelItem.name}</h2>
+            <p className="text-meta">{panelItem.name}, Kenya</p>
 
             <hr className="divider" />
 
             <p className="text-label">Demand score</p>
-            <p className="font-display text-4xl font-bold" style={{ color: 'var(--accent)' }}>
-              {panelItem.demandScore}
-              <span className="text-lg text-meta font-normal">/100</span>
+            <p className="mt-2">
+              <span className="text-5xl font-semibold" style={{ color: 'var(--accent)' }}>
+                {panelItem.demandScore}
+              </span>
+              <span className="text-2xl font-light text-meta">/100</span>
             </p>
+            <div className="h-2 rounded-full bg-[var(--bg-raised)] mt-3 overflow-hidden">
+              <div
+                className="h-full rounded-full"
+                style={{ width: `${panelItem.demandScore}%`, background: 'var(--accent)' }}
+              />
+            </div>
 
-            <div className="grid grid-cols-2 gap-3 mt-4 text-sm">
+            <div className="grid grid-cols-2 gap-4 mt-6">
               {[
-                ['Avg price', `Ksh ${panelItem.avgNightlyPrice?.toLocaleString()}`],
-                ['Listings', panelItem.activeListings],
-                ['Occupancy', `${Math.round((panelItem.occupancyRate ?? 0) * 100)}%`],
-                ['Supply gap', panelItem.supplyGap ?? '—'],
-              ].map(([k, v]) => (
-                <div key={k}>
-                  <p className="text-label">{k}</p>
-                  <p className="font-semibold mt-0.5">{v}</p>
+                ['Avg price tonight', `Ksh ${panelItem.avgNightlyPrice?.toLocaleString()}`],
+                ['Active listings', panelItem.activeListings],
+                ['Occupancy rate', `${Math.round((panelItem.occupancyRate ?? 0) * 100)}%`],
+                ['Supply gap', `${panelItem.supplyGap} bookings`],
+              ].map(([label, value]) => (
+                <div key={label}>
+                  <p className="text-label">{label}</p>
+                  <p className="font-semibold mt-1">{value}</p>
                 </div>
               ))}
             </div>
 
             {panelItem.id === hostArea?.id && (
-              <p className="mt-4 text-sm" style={{ color: 'var(--accent)' }}>
-                ★ Your listing · Ksh {recommendedPrice.toLocaleString()} tonight
+              <p className="text-meta mt-4" style={{ color: 'var(--accent-dark)' }}>
+                Your listing is here · Ksh {recommendedPrice.toLocaleString()} tonight
               </p>
             )}
 
             {level === 'county' && selectedCounty?.id === 'nairobi' && !selectedArea && (
               <p className="text-meta mt-4 flex items-center gap-1">
-                <ZoomIn size={12} /> Click an area column to drill down
+                <ZoomIn size={12} /> Click an area to drill down
               </p>
             )}
 
             {panelItem.topReviewThemes && (
               <>
-                <p className="text-label mt-5">Guest themes</p>
-                <div className="flex flex-wrap gap-1.5 mt-2">
+                <p className="text-label mt-6">Guests mention</p>
+                <div className="flex flex-wrap gap-2 mt-2">
                   {panelItem.topReviewThemes.map((t) => (
-                    <span key={t} className="chip text-[11px]">{t}</span>
+                    <span key={t} className="chip text-[12px]">
+                      {t}
+                    </span>
                   ))}
                 </div>
               </>
             )}
-          </motion.aside>
+          </aside>
         )}
-      </AnimatePresence>
     </div>
   );
 }
